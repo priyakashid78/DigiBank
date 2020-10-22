@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  DigiBank
+
+  Created by baban.jadhav on 22/10/20.
+  Copyright © 2020 priya.kashid. All rights reserved.
+*/
+
+"LANGUAGE_TYPE" = "mr";
+"HELLO_WORLD" = "शुभ सकाळ!";

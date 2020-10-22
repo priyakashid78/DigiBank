@@ -1,0 +1,114 @@
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "27Q-b9-4Fh"; */
+"27Q-b9-4Fh.placeholder" = "Username";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "39z-Li-L44"; */
+"39z-Li-L44.normalTitle" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Forgot your password?"; ObjectID = "AyM-bN-p9m"; */
+"AyM-bN-p9m.normalTitle" = "Forgot your password?";
+
+/* Class = "UITextView"; text = "DigiBank is a educational platform - simulated Online banking platform. Net banking or internet banking is becoming more and more popular with masses. Banking is becoming more digital and hence the reduction in bank branches - it is saving time and efforts of consumers. It is quintessential to start using net banking."; ObjectID = "CQC-E9-udn"; */
+"CQC-E9-udn.text" = "DigiBank is a educational platform - simulated Online banking platform. Net banking or internet banking is becoming more and more popular with masses. Banking is becoming more digital and hence the reduction in bank branches - it is saving time and efforts of consumers. It is quintessential to start using net banking.";
+
+/* Class = "UIButton"; normalTitle = "Get in touch"; ObjectID = "Ds5-5h-mIm"; */
+"Ds5-5h-mIm.normalTitle" = "Get in touch";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "EFl-97-x7h"; */
+"EFl-97-x7h.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "FWL-AP-IR2"; */
+"FWL-AP-IR2.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Contact"; ObjectID = "HGN-cT-xkq"; */
+"HGN-cT-xkq.text" = "Contact";
+
+/* Class = "UITextField"; placeholder = "Occupation"; ObjectID = "JZa-uD-EBd"; */
+"JZa-uD-EBd.placeholder" = "Occupation";
+
+/* Class = "UILabel"; text = "Net Banking"; ObjectID = "Nmc-DA-JlM"; */
+"Nmc-DA-JlM.text" = "Net Banking";
+
+/* Class = "UITextView"; text = "Fidel Softech Pvt. Ltd. Marisoft IT Park 3, 2nd Floor, West Wing,  Kalyani Nagar,  Pune-411014 (MS). India +91-20-49007800 info@fxsol.com"; ObjectID = "O3q-1m-7mj"; */
+"O3q-1m-7mj.text" = "Fidel Softech Pvt. Ltd. Marisoft IT Park 3, 2nd Floor, West Wing,  Kalyani Nagar,  Pune-411014 (MS). India +91-20-49007800 info@fxsol.com";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "O8d-0S-7uQ"; */
+"O8d-0S-7uQ.normalTitle" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "RW0-uV-G4a"; */
+"RW0-uV-G4a.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "SB9-2x-Oaf"; */
+"SB9-2x-Oaf.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "Smk-YJ-m9k"; */
+"Smk-YJ-m9k.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "Wiw-0l-2Gv"; */
+"Wiw-0l-2Gv.placeholder" = "Full Name";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Zn3-2M-Boe"; */
+"Zn3-2M-Boe.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Mobile no"; ObjectID = "asU-qH-ZrD"; */
+"asU-qH-ZrD.placeholder" = "Mobile no";
+
+/* Class = "UIButton"; normalTitle = "Digibank"; ObjectID = "b2T-X0-39y"; */
+"b2T-X0-39y.normalTitle" = "Digibank";
+
+/* Class = "UIButton"; normalTitle = "Digi"; ObjectID = "bIU-G8-qNT"; */
+"bIU-G8-qNT.normalTitle" = "Digi";
+
+/* Class = "UILabel"; text = "Micro Pay"; ObjectID = "baW-cr-9RW"; */
+"baW-cr-9RW.text" = "Micro Pay";
+
+/* Class = "UITextField"; placeholder = "User Email"; ObjectID = "bnZ-3e-Joz"; */
+"bnZ-3e-Joz.placeholder" = "User Email";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "bvm-H0-Xtk"; */
+"bvm-H0-Xtk.text" = "Don't have an account?";
+
+/* Class = "UITextView"; text = "This simulated environment allows user to learn how to use netbanking instead of experimenting on real platform with real money - here user will get dummy account with virtual cash to make the concept and procedure more familiar with more quality information about net banking. There will be step by step assistance and warning against negative effect."; ObjectID = "eN5-9J-jfc"; */
+"eN5-9J-jfc.text" = "This simulated environment allows user to learn how to use netbanking instead of experimenting on real platform with real money - here user will get dummy account with virtual cash to make the concept and procedure more familiar with more quality information about net banking. There will be step by step assistance and warning against negative effect.";
+
+/* Class = "UIButton"; normalTitle = "BANK"; ObjectID = "eRy-ZK-Tus"; */
+"eRy-ZK-Tus.normalTitle" = "BANK";
+
+/* Class = "UILabel"; text = "e Wallet"; ObjectID = "fUj-OL-BXi"; */
+"fUj-OL-BXi.text" = "e Wallet";
+
+/* Class = "UILabel"; text = "@ 2020 Fidel Softech Pvt.Ltd."; ObjectID = "fqp-6G-37U"; */
+"fqp-6G-37U.text" = "@ 2020 Fidel Softech Pvt.Ltd.";
+
+/* Class = "UILabel"; text = "Mobile Banking"; ObjectID = "ibk-wd-tip"; */
+"ibk-wd-tip.text" = "Mobile Banking";
+
+/* Class = "UITextField"; placeholder = "Select Gender"; ObjectID = "nKm-dt-Mh6"; */
+"nKm-dt-Mh6.placeholder" = "Select Gender";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "nqD-I0-DKH"; */
+"nqD-I0-DKH.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "o6q-Um-BUD"; */
+"o6q-Um-BUD.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "About"; ObjectID = "oCp-Pc-IXJ"; */
+"oCp-Pc-IXJ.normalTitle" = "About";
+
+/* Class = "UILabel"; text = "Sign up"; ObjectID = "ogv-Cq-jfz"; */
+"ogv-Cq-jfz.text" = "Sign up";
+
+/* Class = "UITextField"; placeholder = "Address"; ObjectID = "q4C-KG-2vw"; */
+"q4C-KG-2vw.placeholder" = "Address";
+
+/* Class = "UILabel"; text = "Our Courses"; ObjectID = "ron-Up-ojb"; */
+"ron-Up-ojb.text" = "Our Courses";
+
+/* Class = "UILabel"; text = "Contact us and we'll get back to you within 24 hours."; ObjectID = "tPe-3y-zcv"; */
+"tPe-3y-zcv.text" = "Contact us and we'll get back to you within 24 hours.";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "teq-IH-z5Z"; */
+"teq-IH-z5Z.text" = "Sign In";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "vVj-Nc-10u"; */
+"vVj-Nc-10u.placeholder" = "Password";
