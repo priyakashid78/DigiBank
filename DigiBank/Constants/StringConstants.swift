@@ -9,11 +9,24 @@
 import Foundation
 
 struct Constants {
+    
+    //MARK:- String
     struct placeholders {
         static let signUpPlaceholder = "Comment"
     }
     
+    struct alertString {
+         static let emailAlert = "Please Enter validate Email Id"
+         static let passwordAlert = "Please Enter Password."
+         static let successLogin = "Congratulation signup successful now you can login"
+    }
+    
+    //MARK:- images
      struct loginImages {
         static let secureImage  = "Group 78"
+    }
+    
+    struct alertImages {
+        static let checkImage  = "Group 76"
     }
 }

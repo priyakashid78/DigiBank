@@ -24,6 +24,9 @@
 		C03F50092541763900C9E032 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F50072541763900C9E032 /* L102Language.swift */; };
 		C03F500B2541871A00C9E032 /* FontStringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F500A2541871A00C9E032 /* FontStringConstant.swift */; };
 		C03F500D2541874500C9E032 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F500C2541874500C9E032 /* SignUpViewController.swift */; };
+		EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */; };
+		EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */; };
+		EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD822541C2AC00E5AE63 /* StringExtension.swift */; };
 		EEA49DB92540A48D00A303D4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */; };
 		EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */; };
 		EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB1625400785000EA212 /* SignInViewController.swift */; };
@@ -79,6 +82,9 @@
 		C03F50072541763900C9E032 /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
 		C03F500A2541871A00C9E032 /* FontStringConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontStringConstant.swift; sourceTree = "<group>"; };
 		C03F500C2541874500C9E032 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		EE10DD822541C2AC00E5AE63 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		EEAFDB1625400785000EA212 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				C004D6AC2538450500C9B65B /* OrderViewModel.swift */,
+				EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */,
+				EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */,
+				EE10DD822541C2AC00E5AE63 /* StringExtension.swift */,
 				EEAFDB182540157B000EA212 /* UIColorExtension.swift */,
 				EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */,
 			);
@@ -374,8 +383,10 @@
 			files = (
 				EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */,
 				C03F50092541763900C9E032 /* L102Language.swift in Sources */,
+				EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */,
 				EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */,
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
+				EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */,
 				C004D6AB253841D400C9B65B /* Webservice.swift in Sources */,
 				C004D6A22538402600C9B65B /* URLConstants.swift in Sources */,
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
@@ -390,6 +401,7 @@
 				C004D6A12538402600C9B65B /* ColorConstants.swift in Sources */,
 				C004D6AD2538450500C9B65B /* OrderViewModel.swift in Sources */,
 				EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */,
+				EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */,
 				C03F500B2541871A00C9E032 /* FontStringConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

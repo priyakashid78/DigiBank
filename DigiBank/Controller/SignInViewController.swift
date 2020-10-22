@@ -8,19 +8,30 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+protocol signInViewControllerDelegate {
     
+    func showAlert(title: String, errorMessage: String, imageName: String)
+}
+
+class SignInViewController: UIViewController, signInViewControllerDelegate {
+
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
+    let viewModel = SignInViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewModel.delegate = self
         emailTextField.customTextfield()
         passwordTextField.customTextfield()
         let mybuttin = passwordTextField.setButton(imageName:  Constants.loginImages.secureImage)
         mybuttin.addTarget(self, action: #selector(self.refresh), for: .touchUpInside)
         
+    }
+    //flag for image change on alert
+    func showAlert(title: String, errorMessage: String, imageName: String) {
+        self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
     }
     
     //MARK:- IBactions
@@ -33,6 +44,7 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: Any) {
+        viewModel.sendValue(from: emailTextField.text, password: passwordTextField.text)
     }
     
     @IBAction func backToSignInAction(_ sender: Any) {
