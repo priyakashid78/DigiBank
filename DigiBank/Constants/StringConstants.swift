@@ -21,6 +21,9 @@ struct Constants {
          static let successLogin = "Congratulation signup successful now you can login"
     }
     
+    struct storeString {
+        static let appLoginFlag = "appLoginFlag"
+    }
     //MARK:- images
      struct loginImages {
         static let secureImage  = "Group 78"

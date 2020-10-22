@@ -27,6 +27,7 @@
 		EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */; };
 		EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */; };
 		EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD822541C2AC00E5AE63 /* StringExtension.swift */; };
+		EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */; };
 		EEA49DB92540A48D00A303D4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */; };
 		EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */; };
 		EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB1625400785000EA212 /* SignInViewController.swift */; };
@@ -85,6 +86,7 @@
 		EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		EE10DD822541C2AC00E5AE63 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		EEAFDB1625400785000EA212 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				EE10DD822541C2AC00E5AE63 /* StringExtension.swift */,
 				EEAFDB182540157B000EA212 /* UIColorExtension.swift */,
 				EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */,
+				EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
 				EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */,
 				C004D6AB253841D400C9B65B /* Webservice.swift in Sources */,
+				EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */,
 				C004D6A22538402600C9B65B /* URLConstants.swift in Sources */,
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
 				C03F500D2541874500C9E032 /* SignUpViewController.swift in Sources */,

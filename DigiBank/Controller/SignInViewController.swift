@@ -31,7 +31,16 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
     }
     //flag for image change on alert
     func showAlert(title: String, errorMessage: String, imageName: String) {
+       
         self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
+        
+        let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
+        guard optionalBool == true else {
+          return
+        }
+        
+        //redirect
+        
     }
     
     //MARK:- IBactions

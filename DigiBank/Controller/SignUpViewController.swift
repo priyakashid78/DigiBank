@@ -20,12 +20,13 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmTextField: UITextField!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setUI()
-        self.setbutton()
+        genderButton.customButton(padding: true)
         let passwordBt = passwordTextField.setButton(imageName: Constants.loginImages.secureImage)
         passwordBt.addTarget(self, action: #selector(self.showPassword), for: .touchUpInside)
         let confirmBt = confirmTextField.setButton(imageName:  Constants.loginImages.secureImage)
@@ -80,6 +81,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
        
     }
     
+
     //MARK:- PickerView Delegate
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

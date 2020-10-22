@@ -12,11 +12,22 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet weak var userProfileButton: UIButton!
     @IBOutlet weak var upperView: UIView!
+     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButton.customButton(padding: false)
         
+        let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
+       
+        guard optionalBool != nil else {
+            upperView.isHidden = false
+            return
+        }
+          upperView.isHidden = true
     }
+    
+    
     
     //MARK:- IBAction
     
@@ -31,6 +42,9 @@ class DashboardViewController: UIViewController {
     @IBAction func languageChangeAction(_ sender: Any) {
     }
     
+    @IBAction func loginAction(_ sender: Any) {
+       
+    }
     @IBAction func netBankingAction(_ sender: Any) {
         L102Language.setAppleLAnguageTo(lang:"en")
         print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
