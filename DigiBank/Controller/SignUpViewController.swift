@@ -9,7 +9,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
@@ -20,7 +20,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmTextField: UITextField!
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +65,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         genderButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 20,bottom: 5,right: 5)
         
         
-    
+        
     }
     //MARK:- IBAction
     
@@ -74,16 +74,26 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     @IBAction func showConfirmPassword(_ sender: Any) {
-       confirmTextField.isSecureTextEntry.toggle()
+        confirmTextField.isSecureTextEntry.toggle()
+    }
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.backNavigation()
+    }
+    
+    @IBAction func backToSignIn(_ sender: Any) {
+        self.backNavigation()
     }
     
     @IBAction func openDropDown(_ sender: Any) {
-       
     }
     
-
-    //MARK:- PickerView Delegate
+    //MARK:- Function
+    func backNavigation() {
+        self.dismiss(animated: true, completion: nil)
+    }
     
+    //MARK:- PickerView Delegate
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -93,5 +103,5 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     
-
+    
 }

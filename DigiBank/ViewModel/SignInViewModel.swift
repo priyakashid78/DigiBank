@@ -17,7 +17,7 @@ class SignInViewModel: signInViewModelDelegate {
     var delegate: signInViewControllerDelegate?
     
     func sendValue(from email: String?, password: String?) {
-       
+        
         guard (email?.isValidEmail()) == true else {
             delegate?.showAlert(title: "hi", errorMessage: Constants.alertString.emailAlert, imageName: Constants.alertImages.checkImage)
             return
@@ -28,10 +28,10 @@ class SignInViewModel: signInViewModelDelegate {
             return
         }
         delegate?.showAlert(title: "hi", errorMessage: Constants.alertString.successLogin, imageName: Constants.alertImages.checkImage)
-        print("12")
+        
         UserDefaults.standard.set(true, forKey: Constants.storeString.appLoginFlag)
         
     }
     
-   
+    
 }

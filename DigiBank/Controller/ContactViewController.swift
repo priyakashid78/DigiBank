@@ -53,7 +53,14 @@ class ContactViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func sumbitAction(_ sender: Any) {
     }
+    
     @IBAction func backAction(_ sender: Any) {
+        self.backNavigation()
+    }
+    
+    //MARK:- Function
+    func backNavigation() {
+        self.dismiss(animated: true, completion: nil)
     }
    
 }

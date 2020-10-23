@@ -9,43 +9,67 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
-
+    
     @IBOutlet weak var userProfileButton: UIButton!
     @IBOutlet weak var upperView: UIView!
-     @IBOutlet weak var loginButton: UIButton!
-    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var trailingConstantTranslate: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginButton.customButton(padding: false)
         
-        let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
-       
-        guard optionalBool != nil else {
-            upperView.isHidden = false
-            return
-        }
-          upperView.isHidden = true
+        loginButton.customButton(padding: false)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
+        
+        guard optionalBool == true else {
+            trailingConstantTranslate.constant = -50
+            upperView.isHidden = true
+            loginButton.isHidden = false
+            return
+        }
+        upperView.isHidden = false
+        loginButton.isHidden = true
+        trailingConstantTranslate.constant = -125
+    }
     
     
     //MARK:- IBAction
     
     @IBAction func logoutAction(_ sender: Any) {
+          UserDefaults.standard.set(false, forKey: Constants.storeString.appLoginFlag)
+        self.viewDidLoad()
+        self.viewWillAppear(true)
+      
     }
     @IBAction func profileAction(_ sender: Any) {
     }
-    @IBAction func getInTouchAction(_ sender: Any) {
-    }
-    @IBAction func contactAction(_ sender: Any) {
-    }
+    
     @IBAction func languageChangeAction(_ sender: Any) {
     }
     
     @IBAction func loginAction(_ sender: Any) {
-       
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     @IBAction func netBankingAction(_ sender: Any) {
+        let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
+        
+        guard optionalBool == true else {
+            //Move to login
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true, completion: nil)
+            return
+        }
+        
+        //Move to Netbanking demo
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
+        
         L102Language.setAppleLAnguageTo(lang:"en")
         print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
     }

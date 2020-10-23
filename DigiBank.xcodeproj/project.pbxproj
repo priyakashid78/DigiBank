@@ -191,8 +191,8 @@
 		C004D69125383CD900C9B65B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C03F500C2541874500C9E032 /* SignUpViewController.swift */,
 				C004D69425383D3A00C9B65B /* View */,
+				C03F500C2541874500C9E032 /* SignUpViewController.swift */,
 				EEAFDB1625400785000EA212 /* SignInViewController.swift */,
 				EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */,
 				EEFAAE312540484A00CB1CFB /* ContactViewController.swift */,

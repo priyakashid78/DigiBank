@@ -33,14 +33,22 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
     func showAlert(title: String, errorMessage: String, imageName: String) {
        
         self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [unowned self] in
+            self.moveToDashboard()
+        }
+       
+    }
+    
+    func moveToDashboard() {
         
         let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
         guard optionalBool == true else {
-          return
+            return
         }
         
-        //redirect
-        
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "DashboardVc") as! DashboardViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
     //MARK:- IBactions
@@ -54,9 +62,17 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
     
     @IBAction func loginAction(_ sender: Any) {
         viewModel.sendValue(from: emailTextField.text, password: passwordTextField.text)
+        
     }
     
     @IBAction func backToSignInAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func signUpAction(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
 }

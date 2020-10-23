@@ -28,7 +28,7 @@ extension UIViewController {
         alertController.view.addConstraint(height);
         
         present(alertController, animated: true) {
-            self.perform(#selector(self.dismissAlertController(alertController:)), with: alertController, afterDelay: 3.0)
+            self.perform(#selector(self.dismissAlertController(alertController:)), with: alertController, afterDelay: 2.0)
         }
     }
     
