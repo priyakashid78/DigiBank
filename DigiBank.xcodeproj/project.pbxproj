@@ -41,6 +41,7 @@
 		EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */; };
 		EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB1625400785000EA212 /* SignInViewController.swift */; };
 		EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB182540157B000EA212 /* UIColorExtension.swift */; };
+		EEBC3BCB2546CB7300EDB165 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */; };
 		EEE86847253EFDD400564378 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86835253EFDD300564378 /* Poppins-Bold.ttf */; };
 		EEE86848253EFDD400564378 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86836253EFDD300564378 /* Poppins-ExtraBoldItalic.ttf */; };
 		EEE86849253EFDD400564378 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86837253EFDD300564378 /* Poppins-ExtraLightItalic.ttf */; };
@@ -114,6 +115,7 @@
 		EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		EEAFDB1625400785000EA212 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		EEAFDB182540157B000EA212 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguageTableViewCell.swift; path = DigiBank/Controller/LanguageTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		EEE86835253EFDD300564378 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		EEE86836253EFDD300564378 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		EEE86837253EFDD300564378 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		C004D69425383D3A00C9B65B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
 				EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				C03F500D2541874500C9E032 /* SignUpViewController.swift in Sources */,
+				EEBC3BCB2546CB7300EDB165 /* LanguageTableViewCell.swift in Sources */,
 				C004D6A32538402600C9B65B /* StringConstants.swift in Sources */,
 				EEFAAE3425404FF800CB1CFB /* UITextViewExtension.swift in Sources */,
 				EEA49DB92540A48D00A303D4 /* DashboardViewController.swift in Sources */,

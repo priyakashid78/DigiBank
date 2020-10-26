@@ -43,6 +43,13 @@ struct Constants {
         static let userName = "userName"
         
     }
+    
+    struct languageString {
+           static let english = "English"
+           static let hindi = "Hindi"
+           static let marathi = "Marathi"
+           
+       }
     //MARK:- images
      struct loginImages {
         static let secureImage  = "Group 78"
