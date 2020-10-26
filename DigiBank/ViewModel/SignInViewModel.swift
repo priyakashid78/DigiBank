@@ -17,21 +17,21 @@ class SignInViewModel: signInViewModelDelegate {
     var delegate: signInViewControllerDelegate?
     
     func sendValue(from email: String?, password: String?) {
-       
-        guard (email?.isValidEmail()) == true else {
-            delegate?.showAlert(title: "hi", errorMessage: Constants.alertString.emailAlert, imageName: Constants.alertImages.checkImage)
+        
+        guard email!.count > 0 else {
+            delegate?.showAlert(title: Constants.alertString.Error, errorMessage: Constants.validateString.signInUserValidation, imageName: Constants.alertImages.checkImage)
             return
         }
         
         guard password!.count > 0 else {
-            delegate?.showAlert(title: "hii", errorMessage: Constants.alertString.passwordAlert, imageName: Constants.alertImages.checkImage)
+            delegate?.showAlert(title: Constants.alertString.Error, errorMessage: Constants.validateString.passwordAlert, imageName: Constants.alertImages.checkImage)
             return
         }
-        delegate?.showAlert(title: "hi", errorMessage: Constants.alertString.successLogin, imageName: Constants.alertImages.checkImage)
-        print("12")
+        delegate?.showAlert(title: Constants.alertString.success, errorMessage: Constants.alertString.successLogin, imageName: Constants.alertImages.checkImage)
+        
         UserDefaults.standard.set(true, forKey: Constants.storeString.appLoginFlag)
         
     }
     
-   
+    
 }

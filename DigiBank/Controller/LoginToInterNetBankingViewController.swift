@@ -27,7 +27,7 @@ class LoginToInterNetBankingViewController: UIViewController {
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {
-        _ = navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func btnLoginClick(_ sender: Any) {

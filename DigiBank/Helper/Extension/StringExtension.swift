@@ -6,7 +6,7 @@
 //  Copyright © 2020 priya.kashid. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     
@@ -14,7 +14,25 @@ extension String {
         
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        print(emailPred.evaluate(with: self))
         return emailPred.evaluate(with: self)
+    }
+    
+    var isPhoneNumber: Bool {
+        do {
+            let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.phoneNumber.rawValue)
+            let matches = detector.matches(in: self, options: [], range: NSMakeRange(0, self.count))
+            if let res = matches.first {
+                return res.resultType == .phoneNumber && res.range.location == 0 && res.range.length == self.count && self.count == 10
+            } else {
+                return false
+            }
+        } catch {
+            return false
+        }
+    }
+    
+    func countOnlyForTenDigit()->Bool {
+       
+        return self.count <= 10
     }
 }

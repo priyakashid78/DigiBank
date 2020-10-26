@@ -12,17 +12,17 @@ class NetBankingDashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {
-        _ = navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func btnLetsGetStartedClicked(_ sender: Any) {
         let loginToInterNetBankingViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.viewControllerNames.loginToInterNetBankingViewController) as! LoginToInterNetBankingViewController
-               self.navigationController?.pushViewController(loginToInterNetBankingViewController, animated: true)
+        loginToInterNetBankingViewController.modalPresentationStyle = .overFullScreen
+        self.present(loginToInterNetBankingViewController, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

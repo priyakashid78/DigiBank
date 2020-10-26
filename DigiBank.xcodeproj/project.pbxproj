@@ -30,6 +30,13 @@
 		EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */; };
 		EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD822541C2AC00E5AE63 /* StringExtension.swift */; };
 		EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */; };
+		EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096CD2542C6370024394C /* TPKeyboardAvoidingCollectionView.m */; };
+		EEA096D62542C6380024394C /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096CE2542C6380024394C /* TPKeyboardAvoidingScrollView.m */; };
+		EEA096D72542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096D02542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		EEA096D82542C6380024394C /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096D32542C6380024394C /* TPKeyboardAvoidingTableView.m */; };
+		EEA096DB2542DF170024394C /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA096DA2542DF170024394C /* SignUpViewModel.swift */; };
+		EEA096DD25431CDE0024394C /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA096DC25431CDE0024394C /* ContactViewModel.swift */; };
+		EEA096DF254327430024394C /* SelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA096DE254327430024394C /* SelectLanguageViewController.swift */; };
 		EEA49DB92540A48D00A303D4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */; };
 		EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */; };
 		EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB1625400785000EA212 /* SignInViewController.swift */; };
@@ -91,6 +98,18 @@
 		EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		EE10DD822541C2AC00E5AE63 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		EEA096CC2542C6370024394C /* DigiBank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigiBank-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEA096CD2542C6370024394C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		EEA096CE2542C6380024394C /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		EEA096CF2542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		EEA096D02542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		EEA096D12542C6380024394C /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		EEA096D22542C6380024394C /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		EEA096D32542C6380024394C /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		EEA096D42542C6380024394C /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		EEA096DA2542DF170024394C /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		EEA096DC25431CDE0024394C /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		EEA096DE254327430024394C /* SelectLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageViewController.swift; sourceTree = "<group>"; };
 		EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		EEAFDB1625400785000EA212 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +191,8 @@
 			children = (
 				C004D6AC2538450500C9B65B /* OrderViewModel.swift */,
 				EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */,
+				EEA096DA2542DF170024394C /* SignUpViewModel.swift */,
+				EEA096DC25431CDE0024394C /* ContactViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,13 +216,14 @@
 		C004D69125383CD900C9B65B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C03F500C2541874500C9E032 /* SignUpViewController.swift */,
 				C004D69425383D3A00C9B65B /* View */,
-				EEAFDB1625400785000EA212 /* SignInViewController.swift */,
+				C03F500C2541874500C9E032 /* SignUpViewController.swift */,
 				EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */,
+				EEAFDB1625400785000EA212 /* SignInViewController.swift */,
 				EEFAAE312540484A00CB1CFB /* ContactViewController.swift */,
 				C01F79D92542A74200288348 /* NetBankingDashboardViewController.swift */,
 				C01F79DB2542F79200288348 /* LoginToInterNetBankingViewController.swift */,
+				EEA096DE254327430024394C /* SelectLanguageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,6 +258,8 @@
 		C004D6A52538404B00C9B65B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EEA096CC2542C6370024394C /* DigiBank-Bridging-Header.h */,
+				EEA096D92542C6840024394C /* Keyboard */,
 				EEAFDB1325400551000EA212 /* Extension */,
 				EEE86834253EFDA100564378 /* Fonts */,
 				EEFAAE3525406C7100CB1CFB /* ShadowView.swift */,
@@ -257,6 +281,21 @@
 				C03F50072541763900C9E032 /* L102Language.swift */,
 			);
 			path = "Helper Classes Localization";
+			sourceTree = "<group>";
+		};
+		EEA096D92542C6840024394C /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EEA096D22542C6380024394C /* TPKeyboardAvoidingCollectionView.h */,
+				EEA096CD2542C6370024394C /* TPKeyboardAvoidingCollectionView.m */,
+				EEA096D42542C6380024394C /* TPKeyboardAvoidingScrollView.h */,
+				EEA096CE2542C6380024394C /* TPKeyboardAvoidingScrollView.m */,
+				EEA096D12542C6380024394C /* TPKeyboardAvoidingTableView.h */,
+				EEA096D32542C6380024394C /* TPKeyboardAvoidingTableView.m */,
+				EEA096CF2542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				EEA096D02542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 		EEAFDB1325400551000EA212 /* Extension */ = {
@@ -329,6 +368,7 @@
 				TargetAttributes = {
 					C004D675253821BC00C9B65B = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -390,26 +430,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA096DD25431CDE0024394C /* ContactViewModel.swift in Sources */,
 				EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */,
 				C03F50092541763900C9E032 /* L102Language.swift in Sources */,
 				C01F79DA2542A74200288348 /* NetBankingDashboardViewController.swift in Sources */,
 				EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */,
+				EEA096D72542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */,
 				C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */,
+				EEA096DF254327430024394C /* SelectLanguageViewController.swift in Sources */,
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
+				EEA096DB2542DF170024394C /* SignUpViewModel.swift in Sources */,
 				EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */,
 				C004D6AB253841D400C9B65B /* Webservice.swift in Sources */,
 				EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */,
 				C004D6A22538402600C9B65B /* URLConstants.swift in Sources */,
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
+				EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				C03F500D2541874500C9E032 /* SignUpViewController.swift in Sources */,
 				C004D6A32538402600C9B65B /* StringConstants.swift in Sources */,
 				EEFAAE3425404FF800CB1CFB /* UITextViewExtension.swift in Sources */,
 				EEA49DB92540A48D00A303D4 /* DashboardViewController.swift in Sources */,
 				C004D67A253821BC00C9B65B /* AppDelegate.swift in Sources */,
+				EEA096D62542C6380024394C /* TPKeyboardAvoidingScrollView.m in Sources */,
 				EEFAAE3625406C7100CB1CFB /* ShadowView.swift in Sources */,
 				EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */,
 				C004D67C253821BC00C9B65B /* SceneDelegate.swift in Sources */,
+				EEA096D82542C6380024394C /* TPKeyboardAvoidingTableView.m in Sources */,
 				C004D6A12538402600C9B65B /* ColorConstants.swift in Sources */,
 				C004D6AD2538450500C9B65B /* OrderViewModel.swift in Sources */,
 				EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */,
@@ -584,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DigiBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,6 +640,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fidel.DigiBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DigiBank/Helper/DigiBank-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -601,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DigiBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -609,6 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fidel.DigiBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DigiBank/Helper/DigiBank-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

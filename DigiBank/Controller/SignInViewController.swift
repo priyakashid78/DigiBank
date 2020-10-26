@@ -13,7 +13,7 @@ protocol signInViewControllerDelegate {
     func showAlert(title: String, errorMessage: String, imageName: String)
 }
 
-class SignInViewController: UIViewController, signInViewControllerDelegate {
+class SignInViewController: UIViewController, signInViewControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -22,6 +22,7 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         viewModel.delegate = self
         emailTextField.customTextfield()
         passwordTextField.customTextfield()
@@ -29,18 +30,34 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
         mybuttin.addTarget(self, action: #selector(self.refresh), for: .touchUpInside)
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let username: String = UserDefaults.standard.object(forKey: Constants.storeString.userName) as? String ?? "nil"
+        
+        if username.count > 0 && username != "nil" {
+            emailTextField.text = username
+        }
+    }
     //flag for image change on alert
     func showAlert(title: String, errorMessage: String, imageName: String) {
        
         self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [unowned self] in
+            self.moveToDashboard()
+        }
+       
+    }
+    
+    func moveToDashboard() {
         
         let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
         guard optionalBool == true else {
-          return
+            return
         }
         
-        //redirect
-        
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "DashboardVc") as! DashboardViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
     //MARK:- IBactions
@@ -54,9 +71,24 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
     
     @IBAction func loginAction(_ sender: Any) {
         viewModel.sendValue(from: emailTextField.text, password: passwordTextField.text)
+        
     }
     
     @IBAction func backToSignInAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func signUpAction(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    //MARK:- UITextfield
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+           return true
+       }
     
 }

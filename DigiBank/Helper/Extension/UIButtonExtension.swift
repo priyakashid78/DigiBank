@@ -13,7 +13,7 @@ extension UIButton {
     
     func customButton(padding: Bool) {
         
-        self.backgroundColor = UIColor.white // Use anycolor that give you a 2d look.
+       // Use anycolor that give you a 2d look.
         //To apply corner radius
         self.layer.cornerRadius = self.frame.size.height / 2
         
