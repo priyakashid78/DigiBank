@@ -13,7 +13,7 @@ protocol signInViewControllerDelegate {
     func showAlert(title: String, errorMessage: String, imageName: String)
 }
 
-class SignInViewController: UIViewController, signInViewControllerDelegate {
+class SignInViewController: UIViewController, signInViewControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -22,12 +22,21 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         viewModel.delegate = self
         emailTextField.customTextfield()
         passwordTextField.customTextfield()
         let mybuttin = passwordTextField.setButton(imageName:  Constants.loginImages.secureImage)
         mybuttin.addTarget(self, action: #selector(self.refresh), for: .touchUpInside)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let username: String = UserDefaults.standard.object(forKey: Constants.storeString.userName) as? String ?? "nil"
+        
+        if username.count > 0 && username != "nil" {
+            emailTextField.text = username
+        }
     }
     //flag for image change on alert
     func showAlert(title: String, errorMessage: String, imageName: String) {
@@ -74,5 +83,12 @@ class SignInViewController: UIViewController, signInViewControllerDelegate {
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
     }
+    
+    //MARK:- UITextfield
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+           return true
+       }
     
 }

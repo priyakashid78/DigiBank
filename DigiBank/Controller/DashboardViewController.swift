@@ -38,7 +38,8 @@ class DashboardViewController: UIViewController {
     //MARK:- IBAction
     
     @IBAction func logoutAction(_ sender: Any) {
-          UserDefaults.standard.set(false, forKey: Constants.storeString.appLoginFlag)
+        UserDefaults.standard.removeObject(forKey: Constants.storeString.appLoginFlag)
+        UserDefaults.standard.removeObject(forKey: Constants.storeString.userName)
         self.viewDidLoad()
         self.viewWillAppear(true)
       
