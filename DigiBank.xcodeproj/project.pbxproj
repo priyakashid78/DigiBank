@@ -18,6 +18,8 @@
 		C004D6AB253841D400C9B65B /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004D6AA253841D400C9B65B /* Webservice.swift */; };
 		C004D6AD2538450500C9B65B /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004D6AC2538450500C9B65B /* OrderViewModel.swift */; };
 		C004D6AF2538453500C9B65B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004D6AE2538453500C9B65B /* Order.swift */; };
+		C01F79DA2542A74200288348 /* NetBankingDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79D92542A74200288348 /* NetBankingDashboardViewController.swift */; };
+		C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79DB2542F79200288348 /* LoginToInterNetBankingViewController.swift */; };
 		C03F4FF72541705F00C9E032 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03F4FF52541705E00C9E032 /* Dashboard.storyboard */; };
 		C03F50002541732E00C9E032 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C03F50022541732E00C9E032 /* Localizable.strings */; };
 		C03F50082541763900C9E032 /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F50062541763900C9E032 /* L012Localizer.swift */; };
@@ -69,6 +71,8 @@
 		C004D6AA253841D400C9B65B /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		C004D6AC2538450500C9B65B /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		C004D6AE2538453500C9B65B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C01F79D92542A74200288348 /* NetBankingDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBankingDashboardViewController.swift; sourceTree = "<group>"; };
+		C01F79DB2542F79200288348 /* LoginToInterNetBankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginToInterNetBankingViewController.swift; sourceTree = "<group>"; };
 		C03F4FF62541705E00C9E032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
 		C03F4FF82541718C00C9E032 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
 		C03F4FF92541718C00C9E032 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				EEAFDB1625400785000EA212 /* SignInViewController.swift */,
 				EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */,
 				EEFAAE312540484A00CB1CFB /* ContactViewController.swift */,
+				C01F79D92542A74200288348 /* NetBankingDashboardViewController.swift */,
+				C01F79DB2542F79200288348 /* LoginToInterNetBankingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -386,8 +392,10 @@
 			files = (
 				EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */,
 				C03F50092541763900C9E032 /* L102Language.swift in Sources */,
+				C01F79DA2542A74200288348 /* NetBankingDashboardViewController.swift in Sources */,
 				EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */,
 				EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */,
+				C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */,
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
 				EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */,
 				C004D6AB253841D400C9B65B /* Webservice.swift in Sources */,

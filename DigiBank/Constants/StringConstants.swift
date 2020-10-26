@@ -32,4 +32,14 @@ struct Constants {
     struct alertImages {
         static let checkImage  = "Group 76"
     }
+    
+    struct storyBoardName {
+        static let main  = "Main"
+        static let dashboard  = "Dashboard"
+    }
+    
+    struct viewControllerNames {
+        static let netBankingDashboardViewController = "NetBankingDashboardViewController"
+        static let loginToInterNetBankingViewController = "LoginToInterNetBankingViewController"
+    }
 }

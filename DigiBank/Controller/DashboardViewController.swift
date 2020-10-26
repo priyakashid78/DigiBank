@@ -26,9 +26,6 @@ class DashboardViewController: UIViewController {
         }
           upperView.isHidden = true
     }
-    
-    
-    
     //MARK:- IBAction
     
     @IBAction func logoutAction(_ sender: Any) {
@@ -46,8 +43,10 @@ class DashboardViewController: UIViewController {
        
     }
     @IBAction func netBankingAction(_ sender: Any) {
-        L102Language.setAppleLAnguageTo(lang:"en")
-        print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
+        let dashboard : UIStoryboard = UIStoryboard(name: Constants.storyBoardName.dashboard, bundle:nil)
+        let netBankingDashboardViewController = dashboard.instantiateViewController(withIdentifier: Constants.viewControllerNames.netBankingDashboardViewController) as! NetBankingDashboardViewController
+        self.navigationController?.pushViewController(netBankingDashboardViewController, animated: true)
+        //self.present(netBankingDashboardViewController, animated: true, completion: nil)
     }
     @IBAction func mobileBanking(_ sender: Any) {
         L102Language.setAppleLAnguageTo(lang:"mr")
@@ -58,6 +57,8 @@ class DashboardViewController: UIViewController {
         print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
     }
     @IBAction func microPayAction(_ sender: Any) {
+        L102Language.setAppleLAnguageTo(lang:"en")
+        print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
         
     }
     
