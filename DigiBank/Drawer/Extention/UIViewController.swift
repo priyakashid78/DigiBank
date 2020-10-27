@@ -10,7 +10,7 @@ import UIKit
 extension UIViewController {
     
     func setNavigationBarItem() {
-        self.addLeftBarButtonWithImage(UIImage(named: "Group 94")!)
+        self.addLeftBarButtonWithImage(UIImage(named: Constants.DrawerMenuIcon.leftDrawerbuttonIcon)!) 
         self.slideMenuController()?.removeLeftGestures()
         self.slideMenuController()?.removeRightGestures()
         self.slideMenuController()?.addLeftGestures()

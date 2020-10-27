@@ -55,7 +55,7 @@ class NetBankingDashboardViewController: UIViewController {
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btnLetsGetStartedClicked(_ sender: Any) {

@@ -22,6 +22,8 @@ class DashboardViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
         let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
         guard optionalBool == true else {
             trailingConstantTranslate.constant = -50

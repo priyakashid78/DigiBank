@@ -10,13 +10,14 @@ import Foundation
 
 struct Constants {
     
+    static let EMPTY = ""
+    
     //MARK:- String
     struct placeholders {
         static let signUpPlaceholder = "Comment"
     }
-    
+
     struct alertString {
-         
         static let Error = "Warning"
          static let success = "Success"
         static let successLogin = "Congratulation signIn successful"
@@ -24,8 +25,8 @@ struct Constants {
         static let contactSend = "Sit back and relax we'll get back to you within 24 hours"
         static let forgotEmsil = "Check your email id for the details"
     }
+    
      struct validateString {
-        
         static let emailAlert = "Please Enter validate Email Id"
         static let passwordAlert = "Please Enter Password."
         static let signUppasswordAlert = "Username and Password cannot be same."
@@ -36,7 +37,13 @@ struct Constants {
         static let passwordGreater = "Enter minimum 3 alphanumeric character for password"
         static let confirmPassword = "Password do not match"
         static let  signInUserValidation = "Enter Username"
-
+    }
+    
+    struct drawerMenuNameList {
+        static let accountOverView = "Account Overview"
+        static let fundTransfer = "Fund Transfer"
+        static let managePayee = "Manage Payee"
+        static let eStatment = "E-Statement"
     }
     
     struct storeString {
@@ -44,7 +51,7 @@ struct Constants {
         static let userName = "userName"
         
     }
-    
+
     struct languageString {
            static let english = "English"
            static let hindi = "Hindi"
@@ -62,6 +69,11 @@ struct Constants {
     
     struct DrawerMenuIcon {
         static let leftDrawerbuttonIcon = "Group 94"
+        static let crossIcon = "Group 97"
+        static let accountOverView = "Group 410"
+        static let fundTransfer = "Group 411"
+        static let managePayee = "Group 412"
+        static let eStatment = "Group 413"
     }
     
     struct storyBoardName {

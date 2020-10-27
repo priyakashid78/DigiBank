@@ -9,10 +9,10 @@
 import UIKit
 
 class LeftViewControllerCell: UITableViewCell {
-
     
 @IBOutlet weak var lblMenuList: UILabel!
-    @IBOutlet weak var imgIcon: UIImageView!
+@IBOutlet weak var imgIcon: UIImageView!
+@IBOutlet weak var lblTopSeprator: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
