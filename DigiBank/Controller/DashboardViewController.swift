@@ -16,11 +16,12 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var trailingConstantTranslate: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        CommonSupport.statusBarColor(mycolor: AppColor.appPrimaryColorDark!)
         loginButton.customButton(padding: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
         guard optionalBool == true else {
             trailingConstantTranslate.constant = -50

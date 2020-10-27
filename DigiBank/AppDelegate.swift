@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //For localization
         // Override point for customization after application launch.
         // For Multiple language : localization
+        UIApplication.shared.isStatusBarHidden = true
         L102Localizer.DoTheMagic()
         
         // For left Drawer

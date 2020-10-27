@@ -40,6 +40,10 @@
 		EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */; };
 		EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD822541C2AC00E5AE63 /* StringExtension.swift */; };
 		EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */; };
+		EE548DBB2547F6F100CBCE69 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE548DBA2547F6F100CBCE69 /* GlobalFunctions.swift */; };
+		EE548DBD2547FDCA00CBCE69 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE548DBC2547FDCA00CBCE69 /* GradientButton.swift */; };
+		EE548DBF2548240D00CBCE69 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE548DBE2548240D00CBCE69 /* ForgotPasswordViewController.swift */; };
+		EE548DC125482ADA00CBCE69 /* ForgotPassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE548DC025482ADA00CBCE69 /* ForgotPassViewModel.swift */; };
 		EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096CD2542C6370024394C /* TPKeyboardAvoidingCollectionView.m */; };
 		EEA096D62542C6380024394C /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096CE2542C6380024394C /* TPKeyboardAvoidingScrollView.m */; };
 		EEA096D72542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096D02542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
@@ -51,6 +55,7 @@
 		EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */; };
 		EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB1625400785000EA212 /* SignInViewController.swift */; };
 		EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB182540157B000EA212 /* UIColorExtension.swift */; };
+		EEBC3BCB2546CB7300EDB165 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */; };
 		EEE86847253EFDD400564378 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86835253EFDD300564378 /* Poppins-Bold.ttf */; };
 		EEE86848253EFDD400564378 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86836253EFDD300564378 /* Poppins-ExtraBoldItalic.ttf */; };
 		EEE86849253EFDD400564378 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86837253EFDD300564378 /* Poppins-ExtraLightItalic.ttf */; };
@@ -119,6 +124,10 @@
 		EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		EE10DD822541C2AC00E5AE63 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		EE548DBA2547F6F100CBCE69 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = DigiBank/Constants/GlobalFunctions.swift; sourceTree = SOURCE_ROOT; };
+		EE548DBC2547FDCA00CBCE69 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		EE548DBE2548240D00CBCE69 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		EE548DC025482ADA00CBCE69 /* ForgotPassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewModel.swift; sourceTree = "<group>"; };
 		EEA096CC2542C6370024394C /* DigiBank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigiBank-Bridging-Header.h"; sourceTree = "<group>"; };
 		EEA096CD2542C6370024394C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		EEA096CE2542C6380024394C /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
@@ -135,6 +144,7 @@
 		EEAFDB14254005C0000EA212 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		EEAFDB1625400785000EA212 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		EEAFDB182540157B000EA212 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguageTableViewCell.swift; path = DigiBank/Controller/LanguageTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		EEE86835253EFDD300564378 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		EEE86836253EFDD300564378 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		EEE86837253EFDD300564378 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -215,6 +225,7 @@
 				EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */,
 				EEA096DA2542DF170024394C /* SignUpViewModel.swift */,
 				EEA096DC25431CDE0024394C /* ContactViewModel.swift */,
+				EE548DC025482ADA00CBCE69 /* ForgotPassViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +260,7 @@
 				EEA096DE254327430024394C /* SelectLanguageViewController.swift */,
 				C01F79DD2546C76000288348 /* LoginViewController.swift */,
 				C01F79F52546CB8300288348 /* AccountOverViewViewController.swift */,
+				EE548DBE2548240D00CBCE69 /* ForgotPasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,6 +268,7 @@
 		C004D69425383D3A00C9B65B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,11 +297,13 @@
 			isa = PBXGroup;
 			children = (
 				C01F79F72546DB3800288348 /* UIColorFromRGB.swift */,
+				EE548DBA2547F6F100CBCE69 /* GlobalFunctions.swift */, 
 				EEA096CC2542C6370024394C /* DigiBank-Bridging-Header.h */,
 				EEA096D92542C6840024394C /* Keyboard */,
 				EEAFDB1325400551000EA212 /* Extension */,
 				EEE86834253EFDA100564378 /* Fonts */,
 				EEFAAE3525406C7100CB1CFB /* ShadowView.swift */,
+				EE548DBC2547FDCA00CBCE69 /* GradientButton.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -479,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01F79F82546DB3800288348 /* UIColorFromRGB.swift in Sources */,
+				EE548DBD2547FDCA00CBCE69 /* GradientButton.swift in Sources */,
 				EEA096DD25431CDE0024394C /* ContactViewModel.swift in Sources */,
 				C01F79F62546CB8300288348 /* AccountOverViewViewController.swift in Sources */,
 				EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */,
@@ -492,18 +508,21 @@
 				C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */,
 				C01F79E72546C9A100288348 /* UIApplication.swift in Sources */,
 				C01F79E62546C9A100288348 /* UIViewController.swift in Sources */,
+				EE548DC125482ADA00CBCE69 /* ForgotPassViewModel.swift in Sources */,
 				EEA096DF254327430024394C /* SelectLanguageViewController.swift in Sources */,
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
 				EEA096DB2542DF170024394C /* SignUpViewModel.swift in Sources */,
 				EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */,
 				C004D6AB253841D400C9B65B /* Webservice.swift in Sources */,
 				EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */,
+				EE548DBB2547F6F100CBCE69 /* GlobalFunctions.swift in Sources */,
 				C004D6A22538402600C9B65B /* URLConstants.swift in Sources */,
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
 				C01F79F42546C9D200288348 /* SlideMenuController.swift in Sources */,
 				C01F79F02546C9D200288348 /* ExSlideMenuController.swift in Sources */,
 				EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				C03F500D2541874500C9E032 /* SignUpViewController.swift in Sources */,
+				EEBC3BCB2546CB7300EDB165 /* LanguageTableViewCell.swift in Sources */,
 				C004D6A32538402600C9B65B /* StringConstants.swift in Sources */,
 				EEFAAE3425404FF800CB1CFB /* UITextViewExtension.swift in Sources */,
 				EEA49DB92540A48D00A303D4 /* DashboardViewController.swift in Sources */,
@@ -516,6 +535,7 @@
 				EEA096D82542C6380024394C /* TPKeyboardAvoidingTableView.m in Sources */,
 				C004D6A12538402600C9B65B /* ColorConstants.swift in Sources */,
 				C004D6AD2538450500C9B65B /* OrderViewModel.swift in Sources */,
+				EE548DBF2548240D00CBCE69 /* ForgotPasswordViewController.swift in Sources */,
 				EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */,
 				C01F79EF2546C9D200288348 /* LeftViewController.swift in Sources */,
 				EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */,

@@ -9,9 +9,15 @@
 import UIKit
 
 struct AppColor {
-    static let appPrimaryColor = UIColor(hex: "#4966B7")
+    static let appPrimaryColorDark =   UIColor.init(hex:"#0D2978")
+    static let appPrimaryColorMedium =   UIColor.init(hex:"#203C8B")
+    static let gradientLightShade = UIColor.init(hex:"#4B68B9")
+    static let selectedCellBAckground  =  UIColor.init(hex:"#ECEEF5")
+    
     struct ShadowColor {
-         static let  TextFieldShadowColor = UIColor(hex: "#F6F6F6")
+        static let  TextFieldShadowColor =  UIColor.init(hex:"#203C8B")
         
     }
+  
+           
 }
