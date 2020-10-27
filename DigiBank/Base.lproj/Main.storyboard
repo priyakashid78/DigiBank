@@ -57,7 +57,7 @@
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds5-5h-mIm">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds5-5h-mIm" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="561" width="280" height="50"/>
                                                 <color key="backgroundColor" red="0.18823529411764706" green="0.27058823529411763" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -338,7 +338,7 @@
                                                     <segue destination="Dvg-jP-eB1" kind="presentation" id="gWG-kk-y4Q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-X0-I2k">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-X0-I2k" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
                                                 <rect key="frame" x="184" y="814.5" width="61" height="30"/>
                                                 <color key="backgroundColor" red="0.18823529411764706" green="0.27058823529411763" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -475,7 +475,7 @@
                                             <outlet property="delegate" destination="bxN-Ep-cL6" id="h56-FA-kEe"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW0-uV-G4a">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW0-uV-G4a" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
                                         <rect key="frame" x="30" y="215" width="270" height="50"/>
                                         <color key="backgroundColor" red="0.1868000329" green="0.26906657220000002" blue="0.5647345185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -502,6 +502,7 @@
                                         </state>
                                         <connections>
                                             <action selector="forgotPassword:" destination="bxN-Ep-cL6" eventType="touchUpInside" id="5SD-1q-an1"/>
+                                            <segue destination="Mzd-xM-eo2" kind="presentation" id="arC-mb-buA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -635,7 +636,7 @@
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6q-Um-BUD">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6q-Um-BUD" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="413" width="270" height="50"/>
                                                 <color key="backgroundColor" red="0.1868000329" green="0.26906657220000002" blue="0.5647345185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -844,7 +845,7 @@
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-e4-z9z">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-e4-z9z" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="828" width="280" height="50"/>
                                                 <color key="backgroundColor" red="0.1868000329" green="0.26906657220000002" blue="0.5647345185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -1047,7 +1048,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ved-zj-P0D">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ved-zj-P0D" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
                                 <rect key="frame" x="25" y="410" width="270" height="50"/>
                                 <color key="backgroundColor" red="0.1868000329" green="0.26906657220000002" blue="0.5647345185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -1071,7 +1072,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LangCell" rowHeight="50" id="bdo-2R-Ewn" customClass="LanguageTableViewCell" customModule="DigiBank" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="LangCell" rowHeight="50" id="bdo-2R-Ewn" customClass="LanguageTableViewCell" customModule="DigiBank" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bdo-2R-Ewn" id="ewF-gu-bwY">
@@ -1095,7 +1096,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="Eqn-jL-yqg" secondAttribute="trailing" constant="10" id="6df-jf-gRb"/>
                                                         <constraint firstItem="val-21-2dF" firstAttribute="leading" secondItem="gua-cJ-rhg" secondAttribute="leading" constant="16" id="JhT-lJ-thX"/>
@@ -1105,7 +1106,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.18823529410000001" green="0.27058823529999998" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="gua-cJ-rhg" firstAttribute="top" secondItem="ewF-gu-bwY" secondAttribute="top" constant="0.25" id="8Lk-1Q-AYi"/>
                                                 <constraint firstAttribute="bottom" secondItem="gua-cJ-rhg" secondAttribute="bottom" constant="0.34999999999999998" id="GS2-Ir-y6S"/>
@@ -1114,6 +1115,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="backView" destination="gua-cJ-rhg" id="mVN-D0-RuB"/>
                                             <outlet property="checkImage" destination="Eqn-jL-yqg" id="wuD-Wi-Y9z"/>
                                             <outlet property="langTextField" destination="val-21-2dF" id="27A-wU-J7v"/>
                                         </connections>
@@ -1157,7 +1159,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iUM-0M-aRA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Klh-aD-4hi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Klh-aD-4hi">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1168,6 +1170,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mI5-cd-ZzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-63410.625" y="445"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="KRW-HF-E8I">
+            <objects>
+                <viewController storyboardIdentifier="forgotVC" modalPresentationStyle="fullScreen" id="Mzd-xM-eo2" customClass="ForgotPasswordViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifI-og-tlq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 383" translatesAutoresizingMaskIntoConstraints="NO" id="niv-AY-85C">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zw-pA-UG4">
+                                <rect key="frame" x="10" y="25" width="66" height="21"/>
+                                <state key="normal" backgroundImage="Group 75"/>
+                                <connections>
+                                    <action selector="backNavigation" destination="Mzd-xM-eo2" eventType="touchUpInside" id="RLE-M5-cLW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrW-aq-ptY">
+                                <rect key="frame" x="33" y="54" width="254" height="42"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.40000000000000002" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpr-fH-JdO">
+                                <rect key="frame" x="20" y="146" width="280" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="PEG-9b-Vkg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Mzd-xM-eo2" id="ux9-nA-sGG"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email id to recive to reset your password." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e93-dd-pWy">
+                                <rect key="frame" x="52.5" y="104" width="215" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="gq2-RN-I6e"/>
+                                    <constraint firstAttribute="height" constant="32" id="jAh-Bk-cT3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwF-zA-e78" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
+                                <rect key="frame" x="20" y="215" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.1868000329" green="0.26906657220000002" blue="0.5647345185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nNa-mG-245"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitActionWith_sender:" destination="Mzd-xM-eo2" eventType="touchUpInside" id="Jg1-L7-rav"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xwF-zA-e78" firstAttribute="leading" secondItem="ZKh-7f-u2c" secondAttribute="leading" constant="20" id="5Od-Ku-YTt"/>
+                            <constraint firstItem="niv-AY-85C" firstAttribute="top" secondItem="ZKh-7f-u2c" secondAttribute="top" id="9Jr-W0-EPO"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="cpr-fH-JdO" secondAttribute="trailing" constant="20" id="BBm-I6-Puu"/>
+                            <constraint firstItem="7zw-pA-UG4" firstAttribute="top" secondItem="ZKh-7f-u2c" secondAttribute="top" constant="25" id="Ima-Qe-XuO"/>
+                            <constraint firstItem="e93-dd-pWy" firstAttribute="centerX" secondItem="ifI-og-tlq" secondAttribute="centerX" id="PeC-80-DHA"/>
+                            <constraint firstItem="ZKh-7f-u2c" firstAttribute="trailing" secondItem="xwF-zA-e78" secondAttribute="trailing" constant="20" id="SiY-Ej-OXm"/>
+                            <constraint firstItem="xwF-zA-e78" firstAttribute="top" secondItem="cpr-fH-JdO" secondAttribute="bottom" constant="21" id="USC-6e-6Z0"/>
+                            <constraint firstItem="e93-dd-pWy" firstAttribute="top" secondItem="vrW-aq-ptY" secondAttribute="bottom" constant="8" id="hci-EG-9BU"/>
+                            <constraint firstItem="cpr-fH-JdO" firstAttribute="leading" secondItem="ifI-og-tlq" secondAttribute="leading" constant="20" id="ijy-oB-zSb"/>
+                            <constraint firstItem="ZKh-7f-u2c" firstAttribute="trailing" secondItem="niv-AY-85C" secondAttribute="trailing" id="kYp-eS-MyP"/>
+                            <constraint firstItem="niv-AY-85C" firstAttribute="leading" secondItem="ZKh-7f-u2c" secondAttribute="leading" id="mCr-IN-D2H"/>
+                            <constraint firstItem="vrW-aq-ptY" firstAttribute="top" secondItem="7zw-pA-UG4" secondAttribute="bottom" constant="8" id="pZ8-Ti-muH"/>
+                            <constraint firstItem="cpr-fH-JdO" firstAttribute="top" secondItem="e93-dd-pWy" secondAttribute="bottom" constant="10" id="t3j-ei-4VT"/>
+                            <constraint firstItem="vrW-aq-ptY" firstAttribute="centerX" secondItem="ifI-og-tlq" secondAttribute="centerX" id="xXw-QE-7wC"/>
+                            <constraint firstItem="ZKh-7f-u2c" firstAttribute="bottom" secondItem="niv-AY-85C" secondAttribute="bottom" id="yda-RR-nTV"/>
+                            <constraint firstItem="7zw-pA-UG4" firstAttribute="leading" secondItem="ZKh-7f-u2c" secondAttribute="leading" constant="10" id="yk0-yL-40G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZKh-7f-u2c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="51n-4N-iyb"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="cpr-fH-JdO" id="6hV-Ss-JJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uop-eo-O4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61550.625" y="1255"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

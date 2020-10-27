@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //For localization
         // Override point for customization after application launch.
+        UIApplication.shared.isStatusBarHidden = true
+
         L102Localizer.DoTheMagic()
         return true
     }

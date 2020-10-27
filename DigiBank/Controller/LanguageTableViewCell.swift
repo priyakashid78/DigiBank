@@ -12,6 +12,7 @@ class LanguageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var langTextField: UILabel!
      @IBOutlet weak var checkImage: UIImageView!
+     @IBOutlet weak var backView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

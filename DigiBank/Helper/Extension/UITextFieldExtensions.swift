@@ -26,6 +26,7 @@ extension UITextField {
         self.layer.borderColor = UIColor.white.cgColor
         
         //To apply Shadow
+        print(AppColor.ShadowColor.TextFieldShadowColor)
         layer.shadowColor = AppColor.ShadowColor.TextFieldShadowColor?.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 1.0)
         layer.shadowOpacity = 0.2

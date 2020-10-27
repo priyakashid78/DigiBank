@@ -22,6 +22,7 @@ struct Constants {
         static let successLogin = "Congratulation signIn successful"
         static let successSignUp = "Congratulation signup successful now you can login"
         static let contactSend = "Sit back and relax we'll get back to you within 24 hours"
+        static let forgotEmsil = "Check your email id for the details"
     }
      struct validateString {
         

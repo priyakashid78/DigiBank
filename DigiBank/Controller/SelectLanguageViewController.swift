@@ -30,11 +30,15 @@ class SelectLanguageViewController: UIViewController,UITableViewDataSource, UITa
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "LangCell", for: indexPath) as! LanguageTableViewCell
         cell.langTextField.text = languageData[indexPath.row]
-       
+        
         if(rowsWhichAreChecked.contains(indexPath.row) == false){
             cell.checkImage.isHidden = true
-        }else{
+            cell.backView.backgroundColor = .white
+        } else {
+            
             cell.checkImage.isHidden = false
+            cell.backView.backgroundColor = AppColor.selectedCellBAckground
+            
         }
         
         return cell
@@ -50,8 +54,10 @@ class SelectLanguageViewController: UIViewController,UITableViewDataSource, UITa
             tableView.reloadData()
         }else{
             cell.checkImage.isHidden = false
+            
             if let checkedItemIndex = rowsWhichAreChecked.firstIndex(of: indexPath.row){
                 rowsWhichAreChecked.remove(at: checkedItemIndex)
+                cell.contentView.backgroundColor = UIColor.darkGray
                 tableView.reloadData()
             }
         }
@@ -66,7 +72,7 @@ class SelectLanguageViewController: UIViewController,UITableViewDataSource, UITa
     //MARK:- Ibaction
     
     @IBAction func goForward(_ sender: Any) {
-          
+        self.dismiss(animated: true, completion: nil)
         
-       }
+    }
 }
