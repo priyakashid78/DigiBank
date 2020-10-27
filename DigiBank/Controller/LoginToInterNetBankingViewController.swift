@@ -31,6 +31,12 @@ class LoginToInterNetBankingViewController: UIViewController {
     }
     
     @IBAction func btnLoginClick(_ sender: Any) {
+        //AccountOverViewViewController
+        //let dashboard : UIStoryboard = UIStoryboard(name: Constants.storyBoardName.dashboard, bundle:nil)
+        let vc = storyboard?.instantiateViewController(withIdentifier: Constants.viewControllerNames.accountOverViewViewController) as! AccountOverViewViewController
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     /*
     // MARK: - Navigation
@@ -43,3 +49,4 @@ class LoginToInterNetBankingViewController: UIViewController {
     */
 
 }
+

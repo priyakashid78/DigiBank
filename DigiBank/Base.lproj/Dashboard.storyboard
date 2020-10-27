@@ -19,6 +19,9 @@
         <array key="Poppins-SemiBold.ttf">
             <string>Poppins-SemiBold</string>
         </array>
+        <array key="seguisb.ttf">
+            <string>SegoeUI-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Net Banking Dashboard View Controller-->
@@ -36,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="1826"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsG-Jo-qpG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1844.3333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1844.6666666666667"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWH-oG-YSH">
                                                 <rect key="frame" x="20" y="25" width="66" height="21"/>
@@ -50,7 +53,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Net Banking Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzz-25-FyQ">
-                                                <rect key="frame" x="20" y="55" width="335" height="39.333333333333343"/>
+                                                <rect key="frame" x="20" y="55" width="335" height="39.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="40" id="o2f-9b-dzx"/>
                                                 </constraints>
@@ -59,7 +62,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVERYTHING THAT YOU NEED TO KNOW ABOUT NETBANKING IN THE EASIEST WAY" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTD-we-WyS">
-                                                <rect key="frame" x="20" y="101.33333333333334" width="335" height="42"/>
+                                                <rect key="frame" x="20" y="101.66666666666666" width="335" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="71.670000000000002" id="02Z-MP-Thf"/>
                                                 </constraints>
@@ -68,7 +71,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets Go through basics about netbanking/ internet banking before you get started..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm2-cT-uc9">
-                                                <rect key="frame" x="20" y="146.33333333333334" width="335" height="42"/>
+                                                <rect key="frame" x="20" y="146.66666666666666" width="335" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="71.670000000000002" id="Xij-hP-Fpr"/>
                                                 </constraints>
@@ -77,7 +80,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Please note these are the basic instruction while using netbanking on real platform)" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F6-PL-Bl6">
-                                                <rect key="frame" x="20" y="194.33333333333334" width="335" height="42"/>
+                                                <rect key="frame" x="20" y="194.66666666666666" width="335" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="71.670000000000002" id="iFh-pW-c7A"/>
                                                 </constraints>
@@ -86,7 +89,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Step 1 : Make sure that your computer is connected to internet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fG-pm-Y9l">
-                                                <rect key="frame" x="40" y="244.33333333333331" width="301" height="42"/>
+                                                <rect key="frame" x="40" y="244.66666666666669" width="301" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="47.670000000000002" id="U35-59-Mcr"/>
                                                 </constraints>
@@ -95,7 +98,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Step 2: Go to Your banks website" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIA-XR-9Pf">
-                                                <rect key="frame" x="40" y="294.33333333333331" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="294.66666666666669" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="24" id="jge-7a-yyK"/>
                                                 </constraints>
@@ -104,7 +107,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJM-9b-AXJ">
-                                                <rect key="frame" x="35" y="324.33333333333331" width="312" height="84"/>
+                                                <rect key="frame" x="35" y="324.66666666666669" width="312" height="84"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="119" id="n8q-4P-m0Z"/>
                                                 </constraints>
@@ -114,7 +117,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTi-H7-ZET">
-                                                <rect key="frame" x="20" y="415.33333333333331" width="78" height="21"/>
+                                                <rect key="frame" x="20" y="415.66666666666669" width="78" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="21" id="sS6-on-Hcx"/>
                                                 </constraints>
@@ -123,7 +126,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKQ-P1-eRw">
-                                                <rect key="frame" x="20" y="444.33333333333326" width="335" height="147"/>
+                                                <rect key="frame" x="20" y="444.66666666666674" width="335" height="147"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="166.66999999999999" id="DNi-wj-9Cs"/>
                                                 </constraints>
@@ -133,7 +136,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generic steps to Login" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anj-cD-Y6D">
-                                                <rect key="frame" x="20" y="599.33333333333337" width="192" height="21"/>
+                                                <rect key="frame" x="20" y="599.66666666666663" width="192" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="24" id="kld-Gv-TXN"/>
                                                 </constraints>
@@ -142,7 +145,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Enter your customer Number - which you get with New Account opening KIT." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JG-Z9-AhF">
-                                                <rect key="frame" x="40" y="628.33333333333337" width="301" height="42"/>
+                                                <rect key="frame" x="40" y="628.66666666666663" width="301" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="71.670000000000002" id="Aj5-4K-eal"/>
                                                 </constraints>
@@ -151,7 +154,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Confirm your registered mobile Number (Domestic Mobile Number)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-vF-FxW">
-                                                <rect key="frame" x="40" y="673.33333333333337" width="301" height="42"/>
+                                                <rect key="frame" x="40" y="673.66666666666663" width="301" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="71.670000000000002" id="zAn-Rv-hJn"/>
                                                 </constraints>
@@ -160,7 +163,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Input OTP ( One Time Password) which you have received on your mobile" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8I6-qx-os2">
-                                                <rect key="frame" x="40" y="718.33333333333337" width="301" height="42"/>
+                                                <rect key="frame" x="40" y="718.66666666666663" width="301" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="71.670000000000002" id="RD4-VO-Sjp"/>
                                                 </constraints>
@@ -169,7 +172,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Select &amp; Input Debit card details." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0y-wd-5vM">
-                                                <rect key="frame" x="40" y="760.33333333333337" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="760.66666666666663" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="24" id="SPb-zs-6dv"/>
                                                 </constraints>
@@ -178,7 +181,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Set your IPIN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExH-y9-CS9">
-                                                <rect key="frame" x="39.999999999999993" y="784.33333333333337" width="115.33333333333331" height="21"/>
+                                                <rect key="frame" x="39.999999999999993" y="784.66666666666663" width="115.33333333333331" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="21" id="7tx-vl-ThO"/>
                                                 </constraints>
@@ -187,7 +190,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="( Every bank has slight different method to register but above steps are there in general or in combinations)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L75-5o-5Ik">
-                                                <rect key="frame" x="51" y="812.33333333333337" width="290" height="84"/>
+                                                <rect key="frame" x="51" y="812.66666666666663" width="290" height="84"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="95.329999999999998" id="qs8-tX-Cds"/>
                                                 </constraints>
@@ -196,7 +199,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safety precautions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxh-nZ-jzS">
-                                                <rect key="frame" x="20" y="900.33333333333337" width="167" height="21"/>
+                                                <rect key="frame" x="20" y="900.66666666666663" width="167" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="24" id="mnv-ef-hoV"/>
                                                 </constraints>
@@ -205,7 +208,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Never share PIN , Card Number , OTP, Password with anybody - bank never ask for such details via phone, email or in person." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJY-C6-6d8">
-                                                <rect key="frame" x="40" y="929.33333333333337" width="313" height="84"/>
+                                                <rect key="frame" x="40" y="929.66666666666663" width="313" height="84"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="95.329999999999998" id="X5w-FZ-CIC"/>
                                                 </constraints>
@@ -214,7 +217,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Change browser settings to off auto complete and remember login details." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAE-6g-Jam">
-                                                <rect key="frame" x="40" y="1018.3333333333333" width="301" height="42"/>
+                                                <rect key="frame" x="40" y="1018.6666666666667" width="301" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="71.670000000000002" id="nnv-cQ-J1e"/>
                                                 </constraints>
@@ -223,7 +226,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Change password after first time login" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeB-u5-oxr">
-                                                <rect key="frame" x="40" y="1063.3333333333333" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="1063.6666666666667" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="47.670000000000002" id="c87-ai-v94"/>
                                                 </constraints>
@@ -232,7 +235,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Keep changing password periodically" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olf-FA-02c">
-                                                <rect key="frame" x="40" y="1086.3333333333333" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="1086.6666666666667" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="47.670000000000002" id="EJj-WU-RxO"/>
                                                 </constraints>
@@ -241,7 +244,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Password should be complex - difficult to guess" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa8-6n-QI9">
-                                                <rect key="frame" x="40" y="1109.3333333333333" width="301" height="42"/>
+                                                <rect key="frame" x="40" y="1109.6666666666667" width="301" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="47.670000000000002" id="uOP-sJ-70j"/>
                                                 </constraints>
@@ -250,7 +253,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Do not use same password for other portal logins." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpZ-U8-7UG">
-                                                <rect key="frame" x="40" y="1153.3333333333333" width="301" height="42"/>
+                                                <rect key="frame" x="40" y="1153.6666666666667" width="301" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="47.670000000000002" id="beT-nI-GPF"/>
                                                 </constraints>
@@ -259,7 +262,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet Banking / Netbanking Feature" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-4k-Ddd">
-                                                <rect key="frame" x="20" y="1198.3333333333333" width="340" height="21"/>
+                                                <rect key="frame" x="20" y="1198.6666666666667" width="340" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="45" id="v7n-af-bAr"/>
                                                 </constraints>
@@ -268,7 +271,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIn-MJ-RuO">
-                                                <rect key="frame" x="20" y="1221.3333333333333" width="335" height="147"/>
+                                                <rect key="frame" x="20" y="1221.6666666666667" width="335" height="147"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="166.66999999999999" id="FUF-vU-JE2"/>
                                                 </constraints>
@@ -278,7 +281,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generic feature list" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-oT-5Qn">
-                                                <rect key="frame" x="40" y="1376.3333333333333" width="161" height="21"/>
+                                                <rect key="frame" x="40" y="1376.6666666666667" width="161" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="24" id="gxa-35-ZKM"/>
                                                 </constraints>
@@ -287,7 +290,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Balance Enquiry" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7w-1j-WYf">
-                                                <rect key="frame" x="40" y="1405.3333333333333" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="1405.6666666666667" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="fYZ-KP-nCY"/>
                                                 </constraints>
@@ -296,7 +299,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Download account Statement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy8-Ku-RQY">
-                                                <rect key="frame" x="40" y="1437.3333333333333" width="267" height="21"/>
+                                                <rect key="frame" x="40" y="1437.6666666666667" width="267" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Onq-hc-7QY"/>
                                                 </constraints>
@@ -305,7 +308,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Online bill Payment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g8-CO-ywh">
-                                                <rect key="frame" x="40" y="1470.3333333333333" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="1470.6666666666667" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="EvQ-4V-pb6"/>
                                                 </constraints>
@@ -314,7 +317,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Manage Payee" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WV-Wl-neH">
-                                                <rect key="frame" x="40" y="1499.3333333333333" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="1499.6666666666667" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="tII-AF-ZSh"/>
                                                 </constraints>
@@ -322,26 +325,8 @@
                                                 <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Request Cheque book, stop payment of cheque etc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttM-7b-kWQ">
-                                                <rect key="frame" x="40" y="1557.3333333333333" width="315" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="dNF-6q-WT5"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
-                                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Open Deposit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rab-QK-eoX">
-                                                <rect key="frame" x="40" y="1587.3333333333333" width="301" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="IqK-PL-rCg"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
-                                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KI6-nE-FRP">
-                                                <rect key="frame" x="40" y="1528.3333333333333" width="301" height="21"/>
+                                                <rect key="frame" x="40" y="1528.6666666666667" width="301" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="RC3-Ja-1IT"/>
                                                 </constraints>
@@ -351,8 +336,26 @@
                                                 <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Request Cheque book, stop payment of cheque etc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttM-7b-kWQ">
+                                                <rect key="frame" x="40" y="1557.6666666666667" width="315" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="dNF-6q-WT5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Open Deposit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rab-QK-eoX">
+                                                <rect key="frame" x="40" y="1587.6666666666667" width="301" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="IqK-PL-rCg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZQ-G8-bG1">
-                                                <rect key="frame" x="20" y="1617.3333333333333" width="335" height="105"/>
+                                                <rect key="frame" x="20" y="1617.6666666666667" width="335" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="119" id="nTw-cp-feg"/>
                                                 </constraints>
@@ -362,7 +365,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21I-aD-oio">
-                                                <rect key="frame" x="20" y="1746.3333333333333" width="335" height="48"/>
+                                                <rect key="frame" x="20" y="1746.6666666666667" width="335" height="48"/>
                                                 <color key="backgroundColor" red="0.25882352941176467" green="0.60392156862745094" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="V3r-Nv-tua"/>
@@ -520,6 +523,40 @@
                     <navigationItem key="navigationItem" id="GRF-3y-6aq"/>
                     <size key="freeformSize" width="375" height="1870"/>
                     <connections>
+                        <outlet property="lblGenericStepToLogi5" destination="ExH-y9-CS9" id="h5z-FY-Hmh"/>
+                        <outlet property="lblGenericStepToLogin1" destination="9JG-Z9-AhF" id="tRz-Ez-myi"/>
+                        <outlet property="lblGenericStepToLogin2" destination="QOj-vF-FxW" id="CK4-kB-0Ue"/>
+                        <outlet property="lblGenericStepToLogin3" destination="8I6-qx-os2" id="TZR-pd-zbh"/>
+                        <outlet property="lblGenericStepToLogin4" destination="L0y-wd-5vM" id="woW-Bg-GLd"/>
+                        <outlet property="lblGenericStepToLogin6" destination="L75-5o-5Ik" id="uBG-cZ-744"/>
+                        <outlet property="lblGenericStepsToLoginTitle" destination="anj-cD-Y6D" id="N7f-h8-cj0"/>
+                        <outlet property="lblInstructioinTitle" destination="3F6-PL-Bl6" id="igd-eR-N6n"/>
+                        <outlet property="lblInstructionStep1" destination="4fG-pm-Y9l" id="SqG-bT-zt4"/>
+                        <outlet property="lblInstructionStep2" destination="gIA-XR-9Pf" id="JwB-YN-jrP"/>
+                        <outlet property="lblInstructionStep3" destination="sJM-9b-AXJ" id="WUP-XJ-S3d"/>
+                        <outlet property="lblInternetOrNetBankingFeatureLis7" destination="KI6-nE-FRP" id="cfG-Ls-FWb"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList1" destination="EIn-MJ-RuO" id="vPP-5R-PTG"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList10" destination="OZQ-G8-bG1" id="fqd-jP-Cbd"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList2" destination="S5t-oT-5Qn" id="49M-yo-VzB"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList3" destination="o7w-1j-WYf" id="Dtu-fi-opo"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList4" destination="Sy8-Ku-RQY" id="pO1-ji-wie"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList5" destination="0g8-CO-ywh" id="0nj-Ji-RFt"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList6" destination="7WV-Wl-neH" id="0Er-KW-Xnf"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList8" destination="ttM-7b-kWQ" id="tNZ-68-nhY"/>
+                        <outlet property="lblInternetOrNetBankingFeatureList9" destination="rab-QK-eoX" id="Wts-54-npO"/>
+                        <outlet property="lblInternetOrNetBankingFeatureTitle" destination="gc2-4k-Ddd" id="GRE-pe-DHi"/>
+                        <outlet property="lblLoginDescription" destination="iKQ-P1-eRw" id="Occ-mw-R6e"/>
+                        <outlet property="lblLoginTitle" destination="QTi-H7-ZET" id="Zsj-hz-gh3"/>
+                        <outlet property="lblNetBankingCoursesDescription" destination="Jm2-cT-uc9" id="Z6v-cy-fcb"/>
+                        <outlet property="lblNetBankingCoursesSubtitle" destination="RTD-we-WyS" id="jSF-fe-G1Q"/>
+                        <outlet property="lblNetBankingCoursesTitle" destination="hzz-25-FyQ" id="Bku-cY-fRj"/>
+                        <outlet property="lblSafetyPreCaustionDescr2" destination="sAE-6g-Jam" id="8eo-vx-ice"/>
+                        <outlet property="lblSafetyPreCaustionDescr5" destination="wa8-6n-QI9" id="Hak-6q-Rli"/>
+                        <outlet property="lblSafetyPreCaustionDescri1" destination="KJY-C6-6d8" id="l9B-Mu-82b"/>
+                        <outlet property="lblSafetyPreCaustionDescri3" destination="TeB-u5-oxr" id="m2f-WX-hC9"/>
+                        <outlet property="lblSafetyPreCaustionDescri4" destination="Olf-FA-02c" id="ALD-1E-qZc"/>
+                        <outlet property="lblSafetyPreCaustionDescri6" destination="IpZ-U8-7UG" id="9KP-W8-iQe"/>
+                        <outlet property="lblSafetyPreCaustionTitle" destination="Lxh-nZ-jzS" id="r2a-A5-ZcD"/>
                         <segue destination="N0r-WL-yRL" kind="show" id="lNA-Wf-Dd0"/>
                     </connections>
                 </viewController>
@@ -860,11 +897,90 @@
                         <outlet property="txtPassword" destination="ite-Z9-Oet" id="fkd-xL-EVq"/>
                         <outlet property="viewOfBackCustId" destination="OIi-s2-FW0" id="bKe-Y5-gjC"/>
                         <outlet property="viewOfBackPassword" destination="l6j-yM-MuL" id="wYp-si-keh"/>
+                        <segue destination="94y-Oe-K0q" kind="show" id="CZq-Bf-Ful"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGg-UJ-zYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1727" y="-73"/>
+        </scene>
+        <!--Account Over View View Controller-->
+        <scene sceneID="EjF-f7-GMG">
+            <objects>
+                <viewController storyboardIdentifier="AccountOverViewViewController" id="94y-Oe-K0q" customClass="AccountOverViewViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4yh-Vu-dxz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7J-Qp-i6r">
+                                <rect key="frame" x="20" y="74" width="178" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Account">
+                                        <attributes>
+                                            <color key="NSColor" red="0.28627450980392155" green="0.40000000000000002" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Overview">
+                                        <attributes>
+                                            <color key="NSColor" red="0.28627450980392155" green="0.40000000000000002" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmJ-nS-rqy">
+                                <rect key="frame" x="20" y="106" width="335" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 407" translatesAutoresizingMaskIntoConstraints="NO" id="u89-ty-pDC">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="112"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.14117647058823529" green="0.6705882352941176" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBo-Ai-bLj">
+                                        <rect key="frame" x="17" y="23" width="310" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Your Online Banking session will automatically "time out" after 10 minutes of inactivity. This security feature is intended to prevent another individual from viewing your account information while your computer is unattended.</string>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="BNh-Km-J2Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vq6-Uw-ebV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nI-Ct-eNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477.5999999999999" y="-77.58620689655173"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HqZ-OR-0kD">
+            <objects>
+                <viewController id="YAN-4V-ctN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9to-lT-AnD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="A6J-wv-j78"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7d-4R-0Yt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3132" y="-77"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DjU-da-0MS">
@@ -883,9 +999,138 @@
             </objects>
             <point key="canvasLocation" x="-71.200000000000003" y="62.807881773399018"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="2ON-c6-BHs">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qQY-rt-IjO" customClass="HomeViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFc-cj-RK1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yy-2t-2sm">
+                                <rect key="frame" x="164.66666666666666" y="395.66666666666669" width="46" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="3GN-QZ-A5P"/>
+                                    <constraint firstAttribute="height" constant="21" id="4br-OW-QoM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5Yy-2t-2sm" firstAttribute="centerY" secondItem="hFc-cj-RK1" secondAttribute="centerY" id="DOc-0r-JIk"/>
+                            <constraint firstItem="5Yy-2t-2sm" firstAttribute="centerX" secondItem="hFc-cj-RK1" secondAttribute="centerX" id="uSu-lu-MRA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oa2-NL-wqO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHg-Vv-ztg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3807" y="-78"/>
+        </scene>
+        <!--Left View Controller-->
+        <scene sceneID="MU5-AO-arT">
+            <objects>
+                <viewController storyboardIdentifier="LeftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ukz-iy-TiH" customClass="LeftViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KNd-jC-7ao"/>
+                        <viewControllerLayoutGuide type="bottom" id="cTg-ha-LhN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="epM-12-L7U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-Md-H0s">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="812"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GQv-Bb-CeA">
+                                        <rect key="frame" x="75.666666666666686" y="50" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Npb-Hq-2y8"/>
+                                            <constraint firstAttribute="height" constant="120" id="dFs-RC-faF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="apF-8z-Jrb">
+                                        <rect key="frame" x="0.0" y="210" width="271" height="602"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LeftViewControllerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftViewControllerCell" rowHeight="50" id="EAS-Uz-y5a" customClass="LeftViewControllerCell" customModule="LeftDrawer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="271" height="50"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EAS-Uz-y5a" id="pUb-9r-xsI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="271" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2P-pP-zR2">
+                                                            <rect key="frame" x="29" y="12.666666666666664" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="WZw-Op-rrR"/>
+                                                                <constraint firstAttribute="width" constant="25" id="zhP-y9-l4C"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80T-Q5-2RI">
+                                                            <rect key="frame" x="69" y="14.666666666666664" width="180" height="21"/>
+                                                            <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="x2P-pP-zR2" firstAttribute="leading" secondItem="pUb-9r-xsI" secondAttribute="leadingMargin" constant="14" id="7qB-gt-YdK"/>
+                                                        <constraint firstItem="80T-Q5-2RI" firstAttribute="leading" secondItem="x2P-pP-zR2" secondAttribute="trailing" constant="15" id="L3f-Qp-SZn"/>
+                                                        <constraint firstItem="80T-Q5-2RI" firstAttribute="centerY" secondItem="pUb-9r-xsI" secondAttribute="centerY" id="cu4-gl-J2v"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="80T-Q5-2RI" secondAttribute="trailing" constant="7" id="ifj-fP-cpH"/>
+                                                        <constraint firstItem="x2P-pP-zR2" firstAttribute="centerY" secondItem="pUb-9r-xsI" secondAttribute="centerY" id="j9c-Su-rH4"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="imgIcon" destination="x2P-pP-zR2" id="FST-6l-fAL"/>
+                                                    <outlet property="lblMenuList" destination="80T-Q5-2RI" id="kwT-Iy-PWL"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ukz-iy-TiH" id="tnw-oP-yK6"/>
+                                            <outlet property="delegate" destination="ukz-iy-TiH" id="t5O-pM-kcV"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="apF-8z-Jrb" firstAttribute="top" secondItem="GQv-Bb-CeA" secondAttribute="bottom" constant="40" id="55W-3F-NEp"/>
+                                    <constraint firstAttribute="trailing" secondItem="apF-8z-Jrb" secondAttribute="trailing" id="7kk-vo-hAY"/>
+                                    <constraint firstItem="apF-8z-Jrb" firstAttribute="leading" secondItem="vbm-Md-H0s" secondAttribute="leading" id="7xY-GG-bUr"/>
+                                    <constraint firstItem="GQv-Bb-CeA" firstAttribute="centerX" secondItem="vbm-Md-H0s" secondAttribute="centerX" id="VxN-7B-z0A"/>
+                                    <constraint firstAttribute="bottom" secondItem="apF-8z-Jrb" secondAttribute="bottom" id="iYF-AE-uu2"/>
+                                    <constraint firstAttribute="width" constant="271" id="vbe-Mb-sKt"/>
+                                    <constraint firstItem="GQv-Bb-CeA" firstAttribute="top" secondItem="vbm-Md-H0s" secondAttribute="top" constant="50" id="wkJ-lM-uSH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vbm-Md-H0s" firstAttribute="leading" secondItem="vk2-NX-CV8" secondAttribute="leading" id="14H-eJ-odO"/>
+                            <constraint firstAttribute="bottom" secondItem="vbm-Md-H0s" secondAttribute="bottom" id="Ugt-xf-hoS"/>
+                            <constraint firstItem="vbm-Md-H0s" firstAttribute="top" secondItem="epM-12-L7U" secondAttribute="top" id="alp-xO-4os"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vk2-NX-CV8"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgProfile" destination="GQv-Bb-CeA" id="Bhx-BJ-S6F"/>
+                        <outlet property="tblMenuList" destination="apF-8z-Jrb" id="vIb-Al-HiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucL-Cs-Pdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4490" y="-78"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Group 383" width="416" height="615.66668701171875"/>
+        <image name="Group 407" width="390" height="86"/>
         <image name="Group 75" width="66" height="21"/>
         <image name="Group 78" width="24" height="12"/>
         <image name="Group 86" width="10" height="10"/>

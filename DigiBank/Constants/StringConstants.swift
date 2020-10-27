@@ -52,6 +52,10 @@ struct Constants {
         static let checkImage  = "Group 76"
     }
     
+    struct DrawerMenuIcon {
+        static let leftDrawerbuttonIcon = "Group 94"
+    }
+    
     struct storyBoardName {
         static let main  = "Main"
         static let dashboard  = "Dashboard"
@@ -60,5 +64,6 @@ struct Constants {
     struct viewControllerNames {
         static let netBankingDashboardViewController = "NetBankingDashboardViewController"
         static let loginToInterNetBankingViewController = "LoginToInterNetBankingViewController"
+        static let accountOverViewViewController = "AccountOverViewViewController"
     }
 }

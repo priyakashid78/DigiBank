@@ -20,6 +20,16 @@
 		C004D6AF2538453500C9B65B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004D6AE2538453500C9B65B /* Order.swift */; };
 		C01F79DA2542A74200288348 /* NetBankingDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79D92542A74200288348 /* NetBankingDashboardViewController.swift */; };
 		C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79DB2542F79200288348 /* LoginToInterNetBankingViewController.swift */; };
+		C01F79DE2546C76000288348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79DD2546C76000288348 /* LoginViewController.swift */; };
+		C01F79E62546C9A100288348 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79E42546C9A100288348 /* UIViewController.swift */; };
+		C01F79E72546C9A100288348 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79E52546C9A100288348 /* UIApplication.swift */; };
+		C01F79EF2546C9D200288348 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79E82546C9D100288348 /* LeftViewController.swift */; };
+		C01F79F02546C9D200288348 /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79E92546C9D100288348 /* ExSlideMenuController.swift */; };
+		C01F79F22546C9D200288348 /* LeftViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79EB2546C9D100288348 /* LeftViewControllerCell.swift */; };
+		C01F79F42546C9D200288348 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79EE2546C9D100288348 /* SlideMenuController.swift */; };
+		C01F79F62546CB8300288348 /* AccountOverViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79F52546CB8300288348 /* AccountOverViewViewController.swift */; };
+		C01F79F82546DB3800288348 /* UIColorFromRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F79F72546DB3800288348 /* UIColorFromRGB.swift */; };
+		C01F7A642548275400288348 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F7A632548275400288348 /* HomeViewController.swift */; };
 		C03F4FF72541705F00C9E032 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03F4FF52541705E00C9E032 /* Dashboard.storyboard */; };
 		C03F50002541732E00C9E032 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C03F50022541732E00C9E032 /* Localizable.strings */; };
 		C03F50082541763900C9E032 /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F50062541763900C9E032 /* L012Localizer.swift */; };
@@ -80,6 +90,17 @@
 		C004D6AE2538453500C9B65B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C01F79D92542A74200288348 /* NetBankingDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBankingDashboardViewController.swift; sourceTree = "<group>"; };
 		C01F79DB2542F79200288348 /* LoginToInterNetBankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginToInterNetBankingViewController.swift; sourceTree = "<group>"; };
+		C01F79DD2546C76000288348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C01F79E42546C9A100288348 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C01F79E52546C9A100288348 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		C01F79E82546C9D100288348 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		C01F79E92546C9D100288348 /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
+		C01F79EB2546C9D100288348 /* LeftViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewControllerCell.swift; sourceTree = "<group>"; };
+		C01F79ED2546C9D100288348 /* SlideMenuControllerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuControllerSwift.h; sourceTree = "<group>"; };
+		C01F79EE2546C9D100288348 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		C01F79F52546CB8300288348 /* AccountOverViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountOverViewViewController.swift; sourceTree = "<group>"; };
+		C01F79F72546DB3800288348 /* UIColorFromRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFromRGB.swift; sourceTree = "<group>"; };
+		C01F7A632548275400288348 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C03F4FF62541705E00C9E032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
 		C03F4FF82541718C00C9E032 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
 		C03F4FF92541718C00C9E032 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -167,6 +188,7 @@
 		C004D678253821BC00C9B65B /* DigiBank */ = {
 			isa = PBXGroup;
 			children = (
+				C01F79E22546C94600288348 /* Drawer */,
 				C004D6A62538407C00C9B65B /* Framework */,
 				C004D6A52538404B00C9B65B /* Helper */,
 				C004D6A42538403500C9B65B /* Language Localization */,
@@ -217,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				C004D69425383D3A00C9B65B /* View */,
+				C01F7A632548275400288348 /* HomeViewController.swift */,
 				C03F500C2541874500C9E032 /* SignUpViewController.swift */,
 				EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */,
 				EEAFDB1625400785000EA212 /* SignInViewController.swift */,
@@ -224,6 +247,8 @@
 				C01F79D92542A74200288348 /* NetBankingDashboardViewController.swift */,
 				C01F79DB2542F79200288348 /* LoginToInterNetBankingViewController.swift */,
 				EEA096DE254327430024394C /* SelectLanguageViewController.swift */,
+				C01F79DD2546C76000288348 /* LoginViewController.swift */,
+				C01F79F52546CB8300288348 /* AccountOverViewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +283,7 @@
 		C004D6A52538404B00C9B65B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C01F79F72546DB3800288348 /* UIColorFromRGB.swift */,
 				EEA096CC2542C6370024394C /* DigiBank-Bridging-Header.h */,
 				EEA096D92542C6840024394C /* Keyboard */,
 				EEAFDB1325400551000EA212 /* Extension */,
@@ -272,6 +298,28 @@
 			children = (
 			);
 			path = Framework;
+			sourceTree = "<group>";
+		};
+		C01F79E22546C94600288348 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				C01F79E92546C9D100288348 /* ExSlideMenuController.swift */,
+				C01F79E82546C9D100288348 /* LeftViewController.swift */,
+				C01F79EB2546C9D100288348 /* LeftViewControllerCell.swift */,
+				C01F79EE2546C9D100288348 /* SlideMenuController.swift */,
+				C01F79ED2546C9D100288348 /* SlideMenuControllerSwift.h */,
+				C01F79E32546C95700288348 /* Extention */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		C01F79E32546C95700288348 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				C01F79E52546C9A100288348 /* UIApplication.swift */,
+				C01F79E42546C9A100288348 /* UIViewController.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 		C03F50052541760D00C9E032 /* Helper Classes Localization */ = {
@@ -430,14 +478,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01F79F82546DB3800288348 /* UIColorFromRGB.swift in Sources */,
 				EEA096DD25431CDE0024394C /* ContactViewModel.swift in Sources */,
+				C01F79F62546CB8300288348 /* AccountOverViewViewController.swift in Sources */,
 				EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */,
 				C03F50092541763900C9E032 /* L102Language.swift in Sources */,
+				C01F7A642548275400288348 /* HomeViewController.swift in Sources */,
 				C01F79DA2542A74200288348 /* NetBankingDashboardViewController.swift in Sources */,
 				EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */,
 				EEA096D72542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				C01F79F22546C9D200288348 /* LeftViewControllerCell.swift in Sources */,
 				EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */,
 				C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */,
+				C01F79E72546C9A100288348 /* UIApplication.swift in Sources */,
+				C01F79E62546C9A100288348 /* UIViewController.swift in Sources */,
 				EEA096DF254327430024394C /* SelectLanguageViewController.swift in Sources */,
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
 				EEA096DB2542DF170024394C /* SignUpViewModel.swift in Sources */,
@@ -446,11 +500,14 @@
 				EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */,
 				C004D6A22538402600C9B65B /* URLConstants.swift in Sources */,
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
+				C01F79F42546C9D200288348 /* SlideMenuController.swift in Sources */,
+				C01F79F02546C9D200288348 /* ExSlideMenuController.swift in Sources */,
 				EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				C03F500D2541874500C9E032 /* SignUpViewController.swift in Sources */,
 				C004D6A32538402600C9B65B /* StringConstants.swift in Sources */,
 				EEFAAE3425404FF800CB1CFB /* UITextViewExtension.swift in Sources */,
 				EEA49DB92540A48D00A303D4 /* DashboardViewController.swift in Sources */,
+				C01F79DE2546C76000288348 /* LoginViewController.swift in Sources */,
 				C004D67A253821BC00C9B65B /* AppDelegate.swift in Sources */,
 				EEA096D62542C6380024394C /* TPKeyboardAvoidingScrollView.m in Sources */,
 				EEFAAE3625406C7100CB1CFB /* ShadowView.swift in Sources */,
@@ -460,6 +517,7 @@
 				C004D6A12538402600C9B65B /* ColorConstants.swift in Sources */,
 				C004D6AD2538450500C9B65B /* OrderViewModel.swift in Sources */,
 				EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */,
+				C01F79EF2546C9D200288348 /* LeftViewController.swift in Sources */,
 				EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */,
 				C03F500B2541871A00C9E032 /* FontStringConstant.swift in Sources */,
 			);

@@ -10,14 +10,40 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
      
         // Override point for customization after application launch.
         //For localization
         // Override point for customization after application launch.
+        // For Multiple language : localization
         L102Localizer.DoTheMagic()
+        
+        // For left Drawer
+       // self.createMenuView()
+        
         return true
+    }
+    
+    fileprivate func createMenuView() {
+        // create viewController code...
+        //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let mainViewController = UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        
+        let leftViewController = UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
+        
+        let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
+        UINavigationBar.appearance().barTintColor = UIColor.green //barTintColor
+        leftViewController.teamViewController = nvc
+        let slideMenuController = ExSlideMenuController(mainViewController:nvc, leftMenuViewController: leftViewController)
+        slideMenuController.automaticallyAdjustsScrollViewInsets = true
+        slideMenuController.delegate = mainViewController as? SlideMenuControllerDelegate
+        
+        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+        self.window?.rootViewController = slideMenuController
+        self.window?.makeKeyAndVisible()
     }
 
     // MARK: UISceneSession Lifecycle
