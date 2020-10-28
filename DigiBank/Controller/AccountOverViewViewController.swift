@@ -9,7 +9,7 @@
 import UIKit
 
 class AccountOverViewViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,15 +22,25 @@ class AccountOverViewViewController: UIViewController {
         self.setNavigationBarItem()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setRightBar() {
+        
+        let logout = UIBarButtonItem(image: UIImage(named: Constants.navigationbarImage.logoutBlue), style: .plain, target: self, action: #selector(self.logoutNetBanking(sender:)))
+        let userImage = UIBarButtonItem(image: UIImage(named: Constants.navigationbarImage.userImage),  style: .plain, target: self, action: nil)
+        let language = UIBarButtonItem(image: UIImage(named: Constants.navigationbarImage.languageBlue),  style: .plain, target: self, action: #selector(self.languageChange(sender:)))
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
+        navigationController?.navigationBar.tintColor = AppColor.appPrimaryColorDark
+        navigationItem.rightBarButtonItems = [logout,userImage,language]
     }
-    */
-
+    
+    @objc func logoutNetBanking(sender: AnyObject){
+        
+    }
+    
+    @objc func languageChange(sender: AnyObject){
+        
+    }
+    
 }
 

@@ -41,17 +41,17 @@ class SignInViewController: UIViewController, signInViewControllerDelegate, UITe
     //flag for image change on alert
     func showAlert(title: String, errorMessage: String, imageName: String) {
         
-        //                self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
-        //                DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [unowned self] in
-        //                    self.moveToDashboard()
-        //                }
-        
         self.popupAlert(title: title, message: errorMessage, actionTitles: [Constants.AlertMessage.btnOK], actions:[{action1 in
             DispatchQueue.main.async {
                 self.moveToDashboard()
             }
             },{action2 in
             }, nil])
+        
+        //        self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
+        //        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [unowned self] in
+        //            self.moveToDashboard()
+        //        }
     }
     
     func moveToDashboard() {

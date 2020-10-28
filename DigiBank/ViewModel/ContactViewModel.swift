@@ -21,7 +21,7 @@ class ContactViewModel: contactViewModelDelegate {
             delegate?.showAlert(title: Constants.alertString.Error, errorMessage: Constants.validateString.signInUserValidation, imageName: Constants.alertImages.checkImage)
             return
         }
-        guard email!.count > 0 else {
+        guard email!.count > 0 && email?.isValidEmail() == true else {
             delegate?.showAlert(title: Constants.alertString.Error, errorMessage: Constants.validateString.emailAlert, imageName: Constants.alertImages.checkImage)
             return
         }
