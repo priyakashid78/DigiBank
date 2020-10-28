@@ -14,6 +14,12 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var upperView: UIView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var trailingConstantTranslate: NSLayoutConstraint!
+    
+    @IBOutlet weak var lblNetBanking: UILabel!
+    @IBOutlet weak var lblMobileBanking: UILabel!
+    @IBOutlet weak var lbleWallet: UILabel!
+    @IBOutlet weak var lblMicroPay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         CommonSupport.statusBarColor(mycolor: AppColor.appPrimaryColorDark!)
@@ -23,6 +29,12 @@ class DashboardViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        //Set language
+        lblNetBanking.text =  NSLocalizedString("Net_Banking", comment: "")
+        lblMobileBanking.text =  NSLocalizedString("Mobile_Banking", comment: "")
+        lbleWallet.text =  NSLocalizedString("e_Wallet", comment: "")
+        lblMicroPay.text =  NSLocalizedString("Micro_Pay", comment: "")
         
         let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
         guard optionalBool == true else {
@@ -48,20 +60,24 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func languageChangeAction(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SelectLanguageViewController") as! SelectLanguageViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func loginAction(_ sender: Any) {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true, completion: nil)
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func netBankingAction(_ sender: Any) {
         let optionalBool: Bool? = UserDefaults.standard.bool(forKey: Constants.storeString.appLoginFlag)
         guard optionalBool == true else {
             //Move to login
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
-            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: true, completion: nil)
+//            vc.modalPresentationStyle = .overFullScreen
+//            self.present(vc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             return
         }
         
@@ -71,24 +87,23 @@ class DashboardViewController: UIViewController {
 //        vc.modalPresentationStyle = .overFullScreen
 //        self.present(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
-        
-        L102Language.setAppleLAnguageTo(lang:"en")
-        print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
     }
     @IBAction func mobileBanking(_ sender: Any) {
-        L102Language.setAppleLAnguageTo(lang:"mr")
-        print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
-    }
-    @IBAction func walletBankingAction(_ sender: Any) {
-        L102Language.setAppleLAnguageTo(lang:"hi")
-        print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
-    }
-    @IBAction func microPayAction(_ sender: Any) {
-        L102Language.setAppleLAnguageTo(lang:"en")
-        print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
         
     }
+    @IBAction func walletBankingAction(_ sender: Any) {
+       
+    }
+    @IBAction func microPayAction(_ sender: Any) {
     
+    }
+    
+    @IBAction func btnGetInTouch(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "ContactViewController") as! ContactViewController
+        //            vc.modalPresentationStyle = .overFullScreen
+        //            self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension DashboardViewController : SlideMenuControllerDelegate {

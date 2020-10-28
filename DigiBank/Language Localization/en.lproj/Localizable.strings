@@ -8,3 +8,7 @@
 
 "LANGUAGE_TYPE" = "en";
 "HELLO_WORLD" = "Good Morning!";
+"Net_Banking" = "Net Banking";
+"Mobile_Banking" = "Mobile Banking";
+"e_Wallet" = "e Wallet";
+"Micro_Pay" = "Micro Pay";

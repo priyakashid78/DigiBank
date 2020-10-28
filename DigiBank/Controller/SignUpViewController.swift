@@ -100,7 +100,8 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     //MARK:- Function
     func backNavigation() {
-        self.dismiss(animated: true, completion: nil)
+       // self.dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     
@@ -120,8 +121,9 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         }
         
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true, completion: nil)
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK:- PickerView Delegate

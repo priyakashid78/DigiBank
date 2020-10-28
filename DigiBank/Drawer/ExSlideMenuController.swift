@@ -10,14 +10,14 @@ import UIKit
 
 class ExSlideMenuController : SlideMenuController {
 
-//    override func isTagetViewController() -> Bool {
-//        if let vc = UIApplication.topViewController() {
-//            if vc is TeamViewController {
-//                return true
-//            }
-//        }
-//        return false
-//    }
+    override func isTagetViewController() -> Bool {
+        if let vc = UIApplication.topViewController() {
+            if vc is AccountOverViewViewController {
+                return true
+            }
+        }
+        return false
+    }
     
     override func track(_ trackAction: TrackAction) {
         switch trackAction {

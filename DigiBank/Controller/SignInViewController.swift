@@ -56,8 +56,9 @@ class SignInViewController: UIViewController, signInViewControllerDelegate, UITe
         }
         
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "DashboardVc") as! DashboardViewController
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true, completion: nil)
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK:- IBactions
@@ -67,6 +68,10 @@ class SignInViewController: UIViewController, signInViewControllerDelegate, UITe
     }
     
     @IBAction func forgotPassword(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "forgotVC") as! ForgotPasswordViewController
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func loginAction(_ sender: Any) {
@@ -75,13 +80,14 @@ class SignInViewController: UIViewController, signInViewControllerDelegate, UITe
     }
     
     @IBAction func backToSignInAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     @IBAction func signUpAction(_ sender: Any) {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true, completion: nil)
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK:- UITextfield

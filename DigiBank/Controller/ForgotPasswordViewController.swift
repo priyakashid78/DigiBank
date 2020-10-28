@@ -30,7 +30,7 @@ class ForgotPasswordViewController: UIViewController,forgotPassDelegate {
     }
     //MARK:- Function
     @IBAction func backNavigation() {
-        self.dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     
@@ -45,12 +45,11 @@ class ForgotPasswordViewController: UIViewController,forgotPassDelegate {
     }
     
     func moveToSignIn() {
-       
-           self.dismiss(animated: true, completion: nil)
-        }
-        
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            textField.resignFirstResponder()
-            return true
-        }
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

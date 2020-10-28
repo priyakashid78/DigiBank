@@ -73,7 +73,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="Zuu-th-qM2" kind="presentation" id="8Zy-Ej-WrS"/>
+                                                    <action selector="btnGetInTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bq2-gi-hNO"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Courses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ron-Up-ojb">
@@ -334,8 +334,7 @@
                                                 </constraints>
                                                 <state key="normal" backgroundImage="Group 56"/>
                                                 <connections>
-                                                    <action selector="profileAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ozo-If-tlg"/>
-                                                    <segue destination="Dvg-jP-eB1" kind="presentation" id="gWG-kk-y4Q"/>
+                                                    <action selector="languageChangeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyT-hu-SYd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-X0-I2k" customClass="GradientButton" customModule="DigiBank" customModuleProvider="target">
@@ -422,6 +421,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Q02-k3-igY"/>
                     <connections>
+                        <outlet property="lblMicroPay" destination="baW-cr-9RW" id="myY-nk-l8x"/>
+                        <outlet property="lblMobileBanking" destination="ibk-wd-tip" id="5Ys-6u-h97"/>
+                        <outlet property="lblNetBanking" destination="Nmc-DA-JlM" id="03S-wu-lWh"/>
+                        <outlet property="lbleWallet" destination="fUj-OL-BXi" id="e4l-zA-kbV"/>
                         <outlet property="loginButton" destination="Dhh-X0-I2k" id="PFx-MX-kqb"/>
                         <outlet property="trailingConstantTranslate" destination="ZjW-hx-peY" id="vk1-TQ-bMX"/>
                         <outlet property="upperView" destination="aJO-jy-f98" id="Ka4-bh-1An"/>
@@ -502,7 +505,6 @@
                                         </state>
                                         <connections>
                                             <action selector="forgotPassword:" destination="bxN-Ep-cL6" eventType="touchUpInside" id="5SD-1q-an1"/>
-                                            <segue destination="Mzd-xM-eo2" kind="presentation" id="arC-mb-buA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -583,7 +585,7 @@
         <!--Contact View Controller-->
         <scene sceneID="Hr2-dy-q46">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Zuu-th-qM2" customClass="ContactViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zuu-th-qM2" customClass="ContactViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qAU-Nd-4e8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1023,7 +1025,7 @@
         <!--Select Language View Controller-->
         <scene sceneID="fHs-wu-f8g">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Dvg-jP-eB1" customClass="SelectLanguageViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectLanguageViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dvg-jP-eB1" customClass="SelectLanguageViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S4G-Wd-Yha">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1396,9 +1398,6 @@
             <point key="canvasLocation" x="-58393.125" y="443.75"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="8Zy-Ej-WrS"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 382" width="414.5" height="264"/>
         <image name="Group 383" width="416" height="615.5"/>

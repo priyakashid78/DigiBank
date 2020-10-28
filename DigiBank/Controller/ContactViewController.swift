@@ -74,7 +74,8 @@ class ContactViewController: UIViewController, UITextViewDelegate, contactViewCo
     
     //MARK:- Function
     func backNavigation() {
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     func showAlert(title: String, errorMessage: String, imageName: String) {
@@ -89,8 +90,9 @@ class ContactViewController: UIViewController, UITextViewDelegate, contactViewCo
     func moveToDashboard() {
     
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "DashboardVc") as! DashboardViewController
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true, completion: nil)
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

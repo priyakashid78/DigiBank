@@ -61,6 +61,17 @@ class SelectLanguageViewController: UIViewController,UITableViewDataSource, UITa
                 tableView.reloadData()
             }
         }
+        
+        if indexPath.row == 0 {
+            L102Language.setAppleLAnguageTo(lang:"en")
+            print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
+        }else if indexPath.row == 1 {
+            L102Language.setAppleLAnguageTo(lang:"hi")
+            print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
+        }else if indexPath.row == 2 {
+            L102Language.setAppleLAnguageTo(lang:"mr")
+            print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
+        }
     }
     
     
@@ -72,7 +83,6 @@ class SelectLanguageViewController: UIViewController,UITableViewDataSource, UITa
     //MARK:- Ibaction
     
     @IBAction func goForward(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-        
+        _ = navigationController?.popViewController(animated: true)
     }
 }
