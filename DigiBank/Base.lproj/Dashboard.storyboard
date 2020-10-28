@@ -874,6 +874,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" red="0.1868000329" green="0.26906657220000002" blue="0.5647345185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="n5y-a1-w3B" firstAttribute="leading" secondItem="O2o-rG-A42" secondAttribute="leading" id="1Qg-zu-hiP"/>
                             <constraint firstItem="n5y-a1-w3B" firstAttribute="trailing" secondItem="O2o-rG-A42" secondAttribute="trailing" id="4a1-jg-x3d"/>

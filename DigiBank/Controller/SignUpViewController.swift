@@ -141,6 +141,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         genderButton.setTitle(pickerData[row], for: .normal)
+        lastNameTextField.resignFirstResponder()
         pickerView.isHidden = true
     }
     

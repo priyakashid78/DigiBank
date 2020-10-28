@@ -31,7 +31,7 @@ class SignUpViewModel: signUpViewModelDelegate {
             return
         }
         
-        guard (mobile!.count <= 10)  else {
+        guard (mobile!.count >= 10)  else {
             delegate?.showAlert(title: Constants.alertString.Error, errorMessage: Constants.validateString.mobileAlert, imageName: Constants.alertImages.checkImage)
             return
         }

@@ -62,6 +62,11 @@ struct Constants {
      struct loginImages {
         static let secureImage  = "Group 78"
     }
+    struct navigationbarImage {
+        static let userImage  = "Group 96"
+        static let languageBlue  = "translate"
+        static let logoutBlue  = "Group 95"
+    }
     
     struct alertImages {
         static let checkImage  = "Group 76"
