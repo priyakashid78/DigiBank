@@ -86,4 +86,10 @@ struct Constants {
         static let loginToInterNetBankingViewController = "LoginToInterNetBankingViewController"
         static let accountOverViewViewController = "AccountOverViewViewController"
     }
+    
+    //MARK:- Alert
+    
+    struct AlertMessage {
+        static let btnOK = "OK"
+    }
 }
