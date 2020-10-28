@@ -108,7 +108,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     func showAlert(title: String, errorMessage: String, imageName: String) {
         
         self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [unowned self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [unowned self] in
             self.moveToLogin()
         }
     }
