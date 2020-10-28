@@ -11,5 +11,8 @@ import Foundation
 struct FontConstants {
     
      static let Poppins_Regular = "Poppins-Regular"
+     static let Poppins_Bold = "Poppins-Bold"
+     static let Poppins_Medium = "Poppins-Medium"
+  
     
 }

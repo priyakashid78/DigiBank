@@ -16,17 +16,17 @@ struct Constants {
     struct placeholders {
         static let signUpPlaceholder = "Comment"
     }
-
+    
     struct alertString {
         static let Error = "Warning"
-         static let success = "Success"
+        static let success = "Success"
         static let successLogin = "Congratulation signIn successful"
         static let successSignUp = "Congratulation signup successful now you can login"
         static let contactSend = "Sit back and relax we'll get back to you within 24 hours"
         static let forgotEmsil = "Password reset link has been successfully sent to your email address"
     }
     
-     struct validateString {
+    struct validateString {
         static let emailAlert = "Please Enter validate Email Id"
         static let passwordAlert = "Please Enter Password."
         static let signUppasswordAlert = "Username and Password cannot be same."
@@ -51,15 +51,15 @@ struct Constants {
         static let userName = "userName"
         
     }
-
+    
     struct languageString {
-           static let english = "English"
-           static let hindi = "Hindi"
-           static let marathi = "Marathi"
-           
-       }
+        static let english = "English"
+        static let hindi = "Hindi"
+        static let marathi = "Marathi"
+        
+    }
     //MARK:- images
-     struct loginImages {
+    struct loginImages {
         static let secureImage  = "Group 78"
     }
     struct navigationbarImage {
@@ -79,6 +79,30 @@ struct Constants {
         static let fundTransfer = "Group 411"
         static let managePayee = "Group 412"
         static let eStatment = "Group 413"
+    }
+    
+    struct FundTransfer {
+        static let Fund = "Fund"
+        static let Transfer = "Transfer"
+        static let Notices = "With Internet Banking, transferring funds is very simple.There are many options provided online for transferring funds."
+        static let accToSameBank = "Transfer fund to another account with same bank"
+        static let toOtherAcc = "Transfer funds to other Bank Account"
+        static let ToSameBank = "Transfer funds to other same Bank Account"
+        static let imps = "Transfer funds through IMPS using mobile number and MMID"
+        
+        //Image
+        static let buttonImage1 = "Group 4101"
+        static let buttonImage2 = "Component3"
+        static let buttonImage3 = "Component2"
+        static let buttonImage4 = "Component4"
+        
+        //DropArray
+        static let savingAcc = "Saving Account(INR) 001XXXXXXXXXXXXX"
+        static let currentAcc = "Current Account(INR) 002XXXXXXXXXXXXX"
+        static let paymentTypeOneTime = "One Time"
+        static let paymentTypeRe = "Recurring"
+        
+        
     }
     
     struct storyBoardName {

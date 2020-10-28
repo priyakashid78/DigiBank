@@ -16,6 +16,9 @@ struct AppColor {
     static let accountOveriewSreenCode =  "0xF6F6F6"
     static let selectedCellOfLeftDrawer = 0x344E97
     static let appPrimaryColor = 0x4966B7
+    static let borderColor = UIColor.init(hex: "#707070")
+     static let greenDark = UIColor.init(hex: "#429A17")
+      static let greenlight = UIColor.init(hex: "#6AB04C")
     
     struct ShadowColor {
         static let  TextFieldShadowColor =  UIColor.init(hex:"#203C8B")

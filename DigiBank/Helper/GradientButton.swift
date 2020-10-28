@@ -18,10 +18,10 @@ class GradientButton: UIButton {
     private lazy var gradientLayer: CAGradientLayer = {
         let l = CAGradientLayer()
         l.frame = self.bounds
+        l.cornerRadius = l.frame.size.height/2
         l.colors = [AppColor.appPrimaryColorMedium!.cgColor, AppColor.gradientLightShade!.cgColor]
         l.startPoint = CGPoint(x: 0, y: 0.5)
         l.endPoint = CGPoint(x: 1, y: 0.5)
-        l.cornerRadius = 16
         layer.insertSublayer(l, at: 0)
         return l
     }()
