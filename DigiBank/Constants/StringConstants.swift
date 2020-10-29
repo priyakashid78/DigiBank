@@ -73,6 +73,7 @@ struct Constants {
     }
     
     struct DrawerMenuIcon {
+        
         static let leftDrawerbuttonIcon = "Group 94"
         static let crossIcon = "Group 97"
         static let accountOverView = "Group 410"
@@ -82,6 +83,7 @@ struct Constants {
     }
     
     struct FundTransfer {
+        
         static let Fund = "Fund"
         static let Transfer = "Transfer"
         static let Notices = "With Internet Banking, transferring funds is very simple.There are many options provided online for transferring funds."
@@ -96,11 +98,30 @@ struct Constants {
         static let buttonImage3 = "Component2"
         static let buttonImage4 = "Component4"
         
+        static let buttonImage01 = "fundtransfer_icon_1"
+        static let buttonImage02 = "fundtransfer_icon_2"
+        static let buttonImage03 = "fundtransfer_icon_3"
+        static let buttonImage04 = "fundtransfer_icon_4"
+        
         //DropArray
         static let savingAcc = "Saving Account(INR) 001XXXXXXXXXXXXX"
         static let currentAcc = "Current Account(INR) 002XXXXXXXXXXXXX"
         static let paymentTypeOneTime = "One Time"
         static let paymentTypeRe = "Recurring"
+        
+        //AlertString
+        static let fromAccStringValidation = "Select Any Of the Account"
+        static let paymentValidation = "Select Payment Type"
+        static let amountValidation = "Please Enter amount."
+        static let remarkValidation = "Enter Remark"
+        
+        //Grid
+        static let oGridValidate = "Enter O Grid Digits"
+        static let cGridValidate = "Enter C Grid Digits"
+        static let gGridValidate = "Enter G Grid Digits"
+        static let oGridString = "33"
+        static let cGridString = "31"
+        static let gGridString = "79"
         
         
     }

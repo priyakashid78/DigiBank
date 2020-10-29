@@ -8,7 +8,14 @@
 
 import UIKit
 
-class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+protocol FtOtherDelegate {
+    
+    func showAlert(title: String, errorMessage: String, imageName: String)
+    func moveToNext()
+}
+class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,FtOtherDelegate {
+    
+    
     
     @IBOutlet weak var neftButton: UIButton!
     @IBOutlet weak var rtgsButton: UIButton!
@@ -22,27 +29,33 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var pickerView: UIPickerView!
     var flag:Int?
-    
     var fromAccountArray = [String]()
     var toAccountArray = [String]()
     var paymentTypeArray = [String]()
+    let viewModel = FTOtherModelView()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        viewModel.delegate = self
         navigationController?.setNavigationBarHidden(false, animated: false)
         navigationController?.navigationBar.barTintColor = hexStringToUIColor(hex: AppColor.accountOveriewSreenCode)
         fromAccountArray = [Constants.FundTransfer.savingAcc,Constants.FundTransfer.savingAcc]
         paymentTypeArray = [Constants.FundTransfer.paymentTypeOneTime,Constants.FundTransfer.paymentTypeRe]
         toAccountArray = ["1117863783019888","8761111111242321"]
+        
         //For left Drawer
         self.setNavigationBarItem()
         self.setRightBar()
         self.setView()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
-         self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.isHidden = false
     }
+    
     func setView() {
+        
         pickerView.isHidden = true
         amountTextField.customTextfield()
         remarkTextField.customTextfield()
@@ -53,9 +66,8 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         paymentTypeButton.customButton(padding: true)
         impsButton.setBorderCornerRadius()
         rtgsButton.setBorderCornerRadius()
-        
-        
     }
+    
     func setRightBar() {
         
         let logout = UIBarButtonItem(image: UIImage(named: Constants.navigationbarImage.logoutBlue), style: .plain, target: self, action: #selector(self.logoutNetBanking(sender:)))
@@ -78,9 +90,9 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     
     //MARK: Ibaction
     @IBAction func nextButton() {
+        viewModel.sendValue(paymentMode: paymentTypeButton.titleLabel?.text, fromAcc: fromAccButton.titleLabel?.text
+            , toacc: toAccButton.titleLabel?.text, remarkText: remarkTextField.text, amount: amountTextField.text)
         
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "confirm2VC") as! Confirm2ViewController
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -100,7 +112,7 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     
     @IBAction func paymentAction() {
         flag = 3
-       pickerView.reloadAllComponents()
+        pickerView.reloadAllComponents()
         pickerView.isHidden = false
     }
     
@@ -114,7 +126,7 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         
         if flag == 1 {
             return fromAccountArray.count
-        } else if flag == 2{
+        } else if flag == 2 {
             return toAccountArray.count
         } else {
             return paymentTypeArray.count
@@ -125,7 +137,7 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         
         if flag == 1 {
             return fromAccountArray[row]
-        } else if flag == 2{
+        } else if flag == 2 {
             return toAccountArray[row]
         } else {
             return paymentTypeArray[row]
@@ -136,12 +148,24 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         pickerView.isHidden=true
         if flag == 1 {
             fromAccButton.setTitle(fromAccountArray[row], for: .normal)
-        } else if flag == 2{
-           toAccButton.setTitle(toAccountArray[row], for: .normal)
+        } else if flag == 2 {
+            toAccButton.setTitle(toAccountArray[row], for: .normal)
         } else {
-           paymentTypeButton.setTitle(paymentTypeArray[row], for: .normal)
+            paymentTypeButton.setTitle(paymentTypeArray[row], for: .normal)
         }
     }
     
+    func showAlert(title: String, errorMessage: String, imageName: String) {
+         self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
+    }
     
+    func moveToNext() {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "confirm2VC") as! Confirm2ViewController
+        vc.fromAccountString = self.fromAccButton.titleLabel?.text
+        vc.toAccountString = self.toAccButton.titleLabel?.text
+        vc.paymentModeString = "NEFT"
+        vc.remarkString = self.remarkTextField.text
+        vc.amountString =  self.amountTextField.text
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

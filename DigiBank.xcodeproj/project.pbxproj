@@ -49,6 +49,8 @@
 		EE80AC4B254994DB00EB210F /* FTOtherBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80AC4A254994DB00EB210F /* FTOtherBankViewController.swift */; };
 		EE80AC4D25499F5500EB210F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80AC4C25499F5500EB210F /* DateExtension.swift */; };
 		EE80AC4F2549B04400EB210F /* Confirm2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80AC4E2549B04400EB210F /* Confirm2ViewController.swift */; };
+		EE80AC512549B86400EB210F /* AlertScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80AC502549B86400EB210F /* AlertScreenViewController.swift */; };
+		EE80AC532549C27B00EB210F /* FTOtherModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80AC522549C27B00EB210F /* FTOtherModelView.swift */; };
 		EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096CD2542C6370024394C /* TPKeyboardAvoidingCollectionView.m */; };
 		EEA096D62542C6380024394C /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096CE2542C6380024394C /* TPKeyboardAvoidingScrollView.m */; };
 		EEA096D72542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA096D02542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
@@ -80,6 +82,9 @@
 		EEE86856253EFDD400564378 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86844253EFDD400564378 /* Poppins-Regular.ttf */; };
 		EEE86857253EFDD400564378 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86845253EFDD400564378 /* Poppins-ExtraLight.ttf */; };
 		EEE86858253EFDD400564378 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86846253EFDD400564378 /* Poppins-Italic.ttf */; };
+		EEE9070B254AB242001E2C13 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9070A254AB242001E2C13 /* GridViewController.swift */; };
+		EEE9070D254AB5D8001E2C13 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */; };
+		EEE90711254ABC10001E2C13 /* EReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */; };
 		EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE312540484A00CB1CFB /* ContactViewController.swift */; };
 		EEFAAE3425404FF800CB1CFB /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */; };
 		EEFAAE3625406C7100CB1CFB /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE3525406C7100CB1CFB /* ShadowView.swift */; };
@@ -139,6 +144,8 @@
 		EE80AC4A254994DB00EB210F /* FTOtherBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTOtherBankViewController.swift; sourceTree = "<group>"; };
 		EE80AC4C25499F5500EB210F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		EE80AC4E2549B04400EB210F /* Confirm2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirm2ViewController.swift; sourceTree = "<group>"; };
+		EE80AC502549B86400EB210F /* AlertScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertScreenViewController.swift; sourceTree = "<group>"; };
+		EE80AC522549C27B00EB210F /* FTOtherModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTOtherModelView.swift; sourceTree = "<group>"; };
 		EEA096CC2542C6370024394C /* DigiBank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigiBank-Bridging-Header.h"; sourceTree = "<group>"; };
 		EEA096CD2542C6370024394C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		EEA096CE2542C6380024394C /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
@@ -175,6 +182,9 @@
 		EEE86844253EFDD400564378 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		EEE86845253EFDD400564378 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		EEE86846253EFDD400564378 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		EEE9070A254AB242001E2C13 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
+		EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EReceiptViewController.swift; sourceTree = "<group>"; };
 		EEFAAE312540484A00CB1CFB /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		EEFAAE3525406C7100CB1CFB /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -233,11 +243,13 @@
 		C004D68D25383C9500C9B65B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */,
 				C004D6AC2538450500C9B65B /* OrderViewModel.swift */,
 				EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */,
 				EEA096DA2542DF170024394C /* SignUpViewModel.swift */,
 				EEA096DC25431CDE0024394C /* ContactViewModel.swift */,
 				EE548DC025482ADA00CBCE69 /* ForgotPassViewModel.swift */,
+				EE80AC522549C27B00EB210F /* FTOtherModelView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -261,6 +273,7 @@
 		C004D69125383CD900C9B65B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EEE9070E254ABBA4001E2C13 /* FundTransfer */,
 				C004D69425383D3A00C9B65B /* View */,
 				C03F500C2541874500C9E032 /* SignUpViewController.swift */,
 				EEA49DB82540A48D00A303D4 /* DashboardViewController.swift */,
@@ -272,11 +285,9 @@
 				C01F79DD2546C76000288348 /* LoginViewController.swift */,
 				C01F79F52546CB8300288348 /* AccountOverViewViewController.swift */,
 				EE548DBE2548240D00CBCE69 /* ForgotPasswordViewController.swift */,
-				C06684CD2548671C0035426B /* FundTransferViewController.swift */,
 				C06684CF254867630035426B /* ManagePayeeViewController.swift */,
 				C06684D12548679C0035426B /* EStatementViewController.swift */,
-				EE80AC4A254994DB00EB210F /* FTOtherBankViewController.swift */,
-				EE80AC4E2549B04400EB210F /* Confirm2ViewController.swift */,
+				EE80AC502549B86400EB210F /* AlertScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -417,6 +428,18 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		EEE9070E254ABBA4001E2C13 /* FundTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				C06684CD2548671C0035426B /* FundTransferViewController.swift */,
+				EE80AC4A254994DB00EB210F /* FTOtherBankViewController.swift */,
+				EE80AC4E2549B04400EB210F /* Confirm2ViewController.swift */,
+				EEE9070A254AB242001E2C13 /* GridViewController.swift */,
+				EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */,
+			);
+			path = FundTransfer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -511,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE80AC532549C27B00EB210F /* FTOtherModelView.swift in Sources */,
 				C01F79F82546DB3800288348 /* UIColorFromRGB.swift in Sources */,
 				EE548DBD2547FDCA00CBCE69 /* GradientButton.swift in Sources */,
 				EEA096DD25431CDE0024394C /* ContactViewModel.swift in Sources */,
@@ -529,19 +553,23 @@
 				C01F79E62546C9A100288348 /* UIViewController.swift in Sources */,
 				EE548DC125482ADA00CBCE69 /* ForgotPassViewModel.swift in Sources */,
 				EEA096DF254327430024394C /* SelectLanguageViewController.swift in Sources */,
+				EEE90711254ABC10001E2C13 /* EReceiptViewController.swift in Sources */,
 				EEB4EE952549834500BA64F7 /* FundTransferCell.swift in Sources */,
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
 				C06684CE2548671C0035426B /* FundTransferViewController.swift in Sources */,
 				EEA096DB2542DF170024394C /* SignUpViewModel.swift in Sources */,
 				EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */,
+				EEE9070B254AB242001E2C13 /* GridViewController.swift in Sources */,
 				C004D6AB253841D400C9B65B /* Webservice.swift in Sources */,
 				EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */,
+				EEE9070D254AB5D8001E2C13 /* GridViewModel.swift in Sources */,
 				EE548DBB2547F6F100CBCE69 /* GlobalFunctions.swift in Sources */,
 				C004D6A22538402600C9B65B /* URLConstants.swift in Sources */,
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
 				C01F79F42546C9D200288348 /* SlideMenuController.swift in Sources */,
 				C01F79F02546C9D200288348 /* ExSlideMenuController.swift in Sources */,
 				EEA096D52542C6380024394C /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				EE80AC512549B86400EB210F /* AlertScreenViewController.swift in Sources */,
 				C03F500D2541874500C9E032 /* SignUpViewController.swift in Sources */,
 				EEBC3BCB2546CB7300EDB165 /* LanguageTableViewCell.swift in Sources */,
 				C004D6A32538402600C9B65B /* StringConstants.swift in Sources */,
