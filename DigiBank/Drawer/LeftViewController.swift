@@ -133,7 +133,7 @@ UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        print("deselected")
+       
         let cellToDeSelect:UITableViewCell = tableView.cellForRow(at: indexPath)!
         if cellToDeSelect.isEqual(LeftViewControllerCell()){
             cellToDeSelect.contentView.backgroundColor = UIColorFromRGB.init(rgb: AppColor.appPrimaryColor)

@@ -32,5 +32,22 @@ extension UIButton {
         }
         
     }
+    
+    func setBorderCornerRadius() {
+        self.layer.cornerRadius = self.frame.size.height/2
+        self.layer.borderWidth = 1
+        self.layer.borderColor = AppColor.borderColor?.cgColor
+    }
+    
+    func setGradient(color: [UIColor?]) {
+        let l = CAGradientLayer()
+        l.frame = self.bounds
+        l.colors = color as [Any]
+        l.startPoint = CGPoint(x: 0, y: 0.5)
+        l.endPoint = CGPoint(x: 1, y: 0.5)
+        l.cornerRadius = 16
+        self.layer.insertSublayer(l, at: 0)
+        
+    }
    
 }

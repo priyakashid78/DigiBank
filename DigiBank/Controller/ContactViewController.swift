@@ -11,10 +11,10 @@ import UIKit
 protocol contactViewControllerDelegate {
     
     func showAlert(title: String, errorMessage: String, imageName: String)
+    func moveToNextScreen()
 }
 
 class ContactViewController: UIViewController, UITextViewDelegate, contactViewControllerDelegate,UITextFieldDelegate {
-    
     
     @IBOutlet weak var nameTextfield: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -58,7 +58,7 @@ class ContactViewController: UIViewController, UITextViewDelegate, contactViewCo
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-         textField.resignFirstResponder()
+        textField.resignFirstResponder()
         return true
     }
     
@@ -80,20 +80,17 @@ class ContactViewController: UIViewController, UITextViewDelegate, contactViewCo
     
     func showAlert(title: String, errorMessage: String, imageName: String) {
         self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
-        if title == "Success" {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [unowned self] in
-            self.moveToDashboard()
-        }
-        }
+        
     }
     
-    func moveToDashboard() {
-    
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "DashboardVc") as! DashboardViewController
-//        vc.modalPresentationStyle = .overFullScreen
-//        self.present(vc, animated: true, completion: nil)
+    func moveToNextScreen() {
+        
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "alertVc") as! AlertScreenViewController
+        vc.stringToDisplay = Constants.alertString.contactSend
+        vc.VCString = "2"
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
     
     
     

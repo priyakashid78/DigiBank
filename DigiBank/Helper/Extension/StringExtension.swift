@@ -35,4 +35,21 @@ extension String {
        
         return self.count <= 10
     }
+    
+    func withBoldText(text1: String,text2: String) -> NSAttributedString {
+
+        
+        let boldAttribute = [
+            NSAttributedString.Key.font: UIFont(name: FontConstants.Poppins_Bold, size: 18.0)!
+        ]
+        let regularAttribute = [
+            NSAttributedString.Key.font: UIFont(name: FontConstants.Poppins_Medium, size: 18.0)!
+        ]
+        let boldText = NSAttributedString(string: text1, attributes: boldAttribute)
+        let regularText = NSAttributedString(string: text2, attributes: regularAttribute)
+        let newString = NSMutableAttributedString()
+        newString.append(boldText)
+        newString.append(regularText)
+        return newString
+    }
 }

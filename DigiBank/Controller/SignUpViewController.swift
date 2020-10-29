@@ -11,6 +11,7 @@ import UIKit
 protocol signUpViewControllerDelegate {
     
     func showAlert(title: String, errorMessage: String, imageName: String)
+    func moveToNextScreen()
 }
 class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, signUpViewControllerDelegate {
     
@@ -108,24 +109,10 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     func showAlert(title: String, errorMessage: String, imageName: String) {
         
         self.alert(imageName: Constants.alertImages.checkImage, message: errorMessage, title: title)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [unowned self] in
-            self.moveToLogin()
-        }
+        
     }
     
-    func moveToLogin() {
-        let isUserName: String? = UserDefaults.standard.object(forKey: Constants.storeString.userName) as? String
-        
-        guard isUserName != nil else {
-            return
-        }
-        
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
-//        vc.modalPresentationStyle = .overFullScreen
-//        self.present(vc, animated: true, completion: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
+  
     //MARK:- PickerView Delegate
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -169,6 +156,18 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         return true
     }
     
-    
+    func moveToNextScreen() {
+        
+        let isUserName: String? = UserDefaults.standard.object(forKey: Constants.storeString.userName) as? String
+        
+        guard isUserName != nil else {
+            return
+        }
+        
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "alertVc") as! AlertScreenViewController
+        vc.VCString = "1"
+        vc.stringToDisplay = Constants.alertString.successSignUp
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

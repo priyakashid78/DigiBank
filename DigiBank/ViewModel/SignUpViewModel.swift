@@ -56,10 +56,8 @@ class SignUpViewModel: signUpViewModelDelegate {
             return
         }
         
-        delegate?.showAlert(title: Constants.alertString.Error, errorMessage: Constants.alertString.successSignUp, imageName: Constants.alertImages.checkImage)
-        
-        UserDefaults.standard.set(username,  forKey: Constants.storeString.userName)
-        
+        UserDefaults.standard.set(username, forKey: Constants.storeString.userName)
+        delegate?.moveToNextScreen()
     }
     
     

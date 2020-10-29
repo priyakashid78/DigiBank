@@ -18,6 +18,9 @@ struct AppColor {
     static let appPrimaryColor = 0x4966B7
     static let backgroundColorOfMyTransactionCell1 = 0xF6F6F6
     static let backgroundColorOfMyTransactionCell2 = 0xEFEBEB
+    static let borderColor = UIColor.init(hex: "#707070")
+     static let greenDark = UIColor.init(hex: "#429A17")
+      static let greenlight = UIColor.init(hex: "#6AB04C")
     
     struct ShadowColor {
         static let  TextFieldShadowColor =  UIColor.init(hex:"#203C8B")

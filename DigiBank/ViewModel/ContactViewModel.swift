@@ -27,7 +27,7 @@ class ContactViewModel: contactViewModelDelegate {
         }
         
         
-        delegate?.showAlert(title: Constants.alertString.success, errorMessage: Constants.alertString.contactSend, imageName: Constants.alertImages.checkImage)
+        delegate?.moveToNextScreen()
         
     }
 }
