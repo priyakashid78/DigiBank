@@ -38,6 +38,8 @@
 		C06684CE2548671C0035426B /* FundTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06684CD2548671C0035426B /* FundTransferViewController.swift */; };
 		C06684D0254867630035426B /* ManagePayeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06684CF254867630035426B /* ManagePayeeViewController.swift */; };
 		C06684D22548679D0035426B /* EStatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06684D12548679C0035426B /* EStatementViewController.swift */; };
+		C09C0FC3254AA296004D23AA /* MyBillPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C0FC2254AA296004D23AA /* MyBillPaymentTableViewCell.swift */; };
+		C0FAA5DD254A7D5100D0B00C /* MyTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FAA5DC254A7D5100D0B00C /* MyTransactionTableViewCell.swift */; };
 		EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */; };
 		EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */; };
 		EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD822541C2AC00E5AE63 /* StringExtension.swift */; };
@@ -124,6 +126,8 @@
 		C06684CD2548671C0035426B /* FundTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTransferViewController.swift; sourceTree = "<group>"; };
 		C06684CF254867630035426B /* ManagePayeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePayeeViewController.swift; sourceTree = "<group>"; };
 		C06684D12548679C0035426B /* EStatementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EStatementViewController.swift; sourceTree = "<group>"; };
+		C09C0FC2254AA296004D23AA /* MyBillPaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBillPaymentTableViewCell.swift; sourceTree = "<group>"; };
+		C0FAA5DC254A7D5100D0B00C /* MyTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTransactionTableViewCell.swift; sourceTree = "<group>"; };
 		EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		EE10DD822541C2AC00E5AE63 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */,
+				C0FAA5DC254A7D5100D0B00C /* MyTransactionTableViewCell.swift */,
+				C09C0FC2254AA296004D23AA /* MyBillPaymentTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,6 +519,7 @@
 				EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */,
 				C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */,
 				C01F79E72546C9A100288348 /* UIApplication.swift in Sources */,
+				C0FAA5DD254A7D5100D0B00C /* MyTransactionTableViewCell.swift in Sources */,
 				C01F79E62546C9A100288348 /* UIViewController.swift in Sources */,
 				EE548DC125482ADA00CBCE69 /* ForgotPassViewModel.swift in Sources */,
 				EEA096DF254327430024394C /* SelectLanguageViewController.swift in Sources */,
@@ -547,6 +554,7 @@
 				EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */,
 				C01F79EF2546C9D200288348 /* LeftViewController.swift in Sources */,
 				EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */,
+				C09C0FC3254AA296004D23AA /* MyBillPaymentTableViewCell.swift in Sources */,
 				C03F500B2541871A00C9E032 /* FontStringConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

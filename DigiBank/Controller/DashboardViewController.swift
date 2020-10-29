@@ -20,6 +20,8 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var lbleWallet: UILabel!
     @IBOutlet weak var lblMicroPay: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         CommonSupport.statusBarColor(mycolor: AppColor.appPrimaryColorDark!)

@@ -16,6 +16,8 @@ struct AppColor {
     static let accountOveriewSreenCode =  "0xF6F6F6"
     static let selectedCellOfLeftDrawer = 0x344E97
     static let appPrimaryColor = 0x4966B7
+    static let backgroundColorOfMyTransactionCell1 = 0xF6F6F6
+    static let backgroundColorOfMyTransactionCell2 = 0xEFEBEB
     
     struct ShadowColor {
         static let  TextFieldShadowColor =  UIColor.init(hex:"#203C8B")
