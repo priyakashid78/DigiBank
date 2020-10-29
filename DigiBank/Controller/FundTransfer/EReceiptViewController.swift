@@ -18,7 +18,7 @@ class EReceiptViewController: UIViewController {
     var flag: String?
     
     
-    @IBOutlet weak var paymentModeView: UIView!
+   
     @IBOutlet weak var paymentModeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var fromAccLabel: UILabel!
@@ -34,10 +34,13 @@ class EReceiptViewController: UIViewController {
         creditAccLabel.text = toAccountString
         dateLabel.text = Date().toString(dateFormat: "dd/MM/YYYY")
         remarkLabel.text = remarkString
+        amountLabel.text = amountString
         // Do any additional setup after loading the view.
     }
     
     @IBAction func submitAction() {
-        self.navigationController?.popToRootViewController(animated: true)
+        let dashboardStoryboard = UIStoryboard(name:Constants.storyBoardName.dashboard, bundle: nil)
+        let fundTransferViewController = dashboardStoryboard.instantiateViewController(withIdentifier: "FundTransferViewController") as! FundTransferViewController
+        self.navigationController?.pushViewController(fundTransferViewController,animated: true)
     }
 }

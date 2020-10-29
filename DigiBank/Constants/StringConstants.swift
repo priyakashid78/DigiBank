@@ -91,6 +91,9 @@ struct Constants {
         static let toOtherAcc = "Transfer funds to other Bank Account"
         static let ToSameBank = "Transfer funds to other same Bank Account"
         static let imps = "Transfer funds through IMPS using mobile number and MMID"
+        static let TransactionType = "Transfer funds to your own account"
+        static let otpValidation = "Enter Validate OTP"
+        
         
         //Image
         static let buttonImage1 = "Group 4101"
@@ -114,6 +117,7 @@ struct Constants {
         static let paymentValidation = "Select Payment Type"
         static let amountValidation = "Please Enter amount."
         static let remarkValidation = "Enter Remark"
+        static let toAccValidation = "Enter 16 digit Account number"
         
         //Grid
         static let oGridValidate = "Enter O Grid Digits"

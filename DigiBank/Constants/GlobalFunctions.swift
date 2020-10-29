@@ -26,4 +26,6 @@ static func statusBarColor(mycolor: UIColor) {
            statusBar?.backgroundColor = mycolor
        }
    }
+    
+   
 }

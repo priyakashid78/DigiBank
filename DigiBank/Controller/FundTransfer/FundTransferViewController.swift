@@ -80,9 +80,9 @@ class FundTransferViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            print("")
-//            let vc = self.storyboard!.instantiateViewController(withIdentifier: "FTOtherBank") as! FTOtherBankViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
+           
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "FTtoSameBankVc") as! FTtoBank1ViewController
+            self.navigationController?.pushViewController(vc, animated: true)
         case 1:
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "FTOtherBank") as! FTOtherBankViewController
             self.navigationController?.pushViewController(vc, animated: true)
