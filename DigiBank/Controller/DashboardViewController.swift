@@ -14,7 +14,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var upperView: UIView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var trailingConstantTranslate: NSLayoutConstraint!
-    
+    @IBOutlet weak var topOfScrollView: NSLayoutConstraint!
     @IBOutlet weak var lblNetBanking: UILabel!
     @IBOutlet weak var lblMobileBanking: UILabel!
     @IBOutlet weak var lbleWallet: UILabel!
@@ -32,6 +32,18 @@ class DashboardViewController: UIViewController {
         
         navigationController?.setNavigationBarHidden(true, animated: false)
         
+        var hasTopNotch: Bool {
+            if #available(iOS 11.0, tvOS 11.0, *) {
+                return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
+            }
+            return false
+        }
+        
+        if hasTopNotch == true {
+            topOfScrollView.constant = -44
+        }else{
+            topOfScrollView.constant = 0
+        }
         //Set language
         lblNetBanking.text =  NSLocalizedString("Net_Banking", comment: "")
         lblMobileBanking.text =  NSLocalizedString("Mobile_Banking", comment: "")
