@@ -36,6 +36,12 @@ class EStatementViewController: UIViewController {
         navigationItem.rightBarButtonItems = [logout,userImage,language]
     }
     
+    @IBAction func btnDownloadClick(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "alertVc") as! AlertScreenViewController
+        vc.stringToDisplay = Constants.alertString.downloadSuccessful
+        vc.VCString = "4"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     @objc func logoutNetBanking(sender: AnyObject){
         
     }

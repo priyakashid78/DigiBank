@@ -18,19 +18,18 @@ class AlertScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textLabel.text = stringToDisplay
-        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            
-            
-            let vc = self.storyboard!.instantiateViewController(withIdentifier: "DashboardVc") as! DashboardViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-            
-            
+            if self.VCString == "4"{
+                let dashboardStoryboard = UIStoryboard(name:Constants.storyBoardName.dashboard, bundle: nil)
+                let vc = dashboardStoryboard.instantiateViewController(withIdentifier: "AccountOverViewViewController") as! AccountOverViewViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+            }else{
+                let vc = self.storyboard!.instantiateViewController(withIdentifier: "DashboardVc") as! DashboardViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
         // Do any additional setup after loading the view.
     }
-    
-
- 
-
 }
