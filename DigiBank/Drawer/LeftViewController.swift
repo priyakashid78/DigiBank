@@ -82,7 +82,7 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
             self.slideMenuController()?.changeMainViewController(self.managePayeeViewController, close: true)
             
         case .eStatement:
-            let dashboardStoryboard = UIStoryboard(name:Constants.storyBoardName.dashboard, bundle: nil)
+            let dashboardStoryboard = UIStoryboard(name:Constants.storyBoardName.main, bundle: nil)
             let eStatementViewController = dashboardStoryboard.instantiateViewController(withIdentifier: "EStatementViewController") as! EStatementViewController
             self.eStatementViewController = UINavigationController(rootViewController: eStatementViewController)
             self.slideMenuController()?.changeMainViewController(self.eStatementViewController, close: true)

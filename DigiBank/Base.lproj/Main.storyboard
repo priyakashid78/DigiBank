@@ -1467,6 +1467,21 @@
             </objects>
             <point key="canvasLocation" x="-58393.125" y="443.75"/>
         </scene>
+        <!--Statement View Controller-->
+        <scene sceneID="As8-OW-OCd">
+            <objects>
+                <viewController storyboardIdentifier="EStatementViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xaK-Es-8DD" customClass="EStatementViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nyH-oL-W3Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8su-vj-8G4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZH-BE-A8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57677" y="434"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Group 382" width="414.5" height="264"/>

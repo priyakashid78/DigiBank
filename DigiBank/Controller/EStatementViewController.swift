@@ -21,6 +21,7 @@ class EStatementViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = hexStringToUIColor(hex: AppColor.accountOveriewSreenCode)
         //For left Drawer
         self.setNavigationBarItem()
+        self.setRightBar()
     }
     
     func setRightBar() {
