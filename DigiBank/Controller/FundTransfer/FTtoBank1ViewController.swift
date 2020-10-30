@@ -87,6 +87,7 @@ class FTtoBank1ViewController: UIViewController,FTSameViewCDelegate, UITextField
     
     @IBAction func fromAccAction() {
         flag = 1
+        self.view.endEditing(true)
         pickerView.reloadAllComponents()
         pickerView.isHidden = false
     }

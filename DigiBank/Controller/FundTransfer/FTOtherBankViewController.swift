@@ -101,12 +101,14 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     
     @IBAction func fromAccAction() {
         flag = 1
+        self.view.endEditing(true)
         pickerView.reloadAllComponents()
         pickerView.isHidden = false
     }
     
     @IBAction func toAccAction() {
         flag = 2
+        self.view.endEditing(true)
         pickerView.reloadAllComponents()
         pickerView.isHidden = false
         
@@ -114,6 +116,7 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     
     @IBAction func paymentAction() {
         flag = 3
+        self.view.endEditing(true)
         pickerView.reloadAllComponents()
         pickerView.isHidden = false
     }

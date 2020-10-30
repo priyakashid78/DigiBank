@@ -94,6 +94,7 @@
 		EEE9070D254AB5D8001E2C13 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */; };
 		EEE90711254ABC10001E2C13 /* EReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */; };
 		EEEAEDEC254C2FC00062E2F0 /* payeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEAEDEB254C2FC00062E2F0 /* payeeViewModel.swift */; };
+		EEEAEDEE254C3EEE0062E2F0 /* ConfirmPayeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEAEDED254C3EEE0062E2F0 /* ConfirmPayeeViewController.swift */; };
 		EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE312540484A00CB1CFB /* ContactViewController.swift */; };
 		EEFAAE3425404FF800CB1CFB /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */; };
 		EEFAAE3625406C7100CB1CFB /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE3525406C7100CB1CFB /* ShadowView.swift */; };
@@ -203,6 +204,7 @@
 		EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EReceiptViewController.swift; sourceTree = "<group>"; };
 		EEEAEDEB254C2FC00062E2F0 /* payeeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = payeeViewModel.swift; sourceTree = "<group>"; };
+		EEEAEDED254C3EEE0062E2F0 /* ConfirmPayeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfirmPayeeViewController.swift; path = FundTransfer/ConfirmPayeeViewController.swift; sourceTree = "<group>"; };
 		EEFAAE312540484A00CB1CFB /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		EEFAAE3525406C7100CB1CFB /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		C004D69125383CD900C9B65B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EEEAEDED254C3EEE0062E2F0 /* ConfirmPayeeViewController.swift */,
 				EEE9070E254ABBA4001E2C13 /* FundTransfer */,
 				C004D69425383D3A00C9B65B /* View */,
 				C03F500C2541874500C9E032 /* SignUpViewController.swift */,
@@ -617,6 +620,7 @@
 				EEFAAE3625406C7100CB1CFB /* ShadowView.swift in Sources */,
 				EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */,
 				EE80AC4F2549B04400EB210F /* Confirm2ViewController.swift in Sources */,
+				EEEAEDEE254C3EEE0062E2F0 /* ConfirmPayeeViewController.swift in Sources */,
 				C004D67C253821BC00C9B65B /* SceneDelegate.swift in Sources */,
 				EEDD8658254AFBB200EEA657 /* OTPView.swift in Sources */,
 				EEA096D82542C6380024394C /* TPKeyboardAvoidingTableView.m in Sources */,

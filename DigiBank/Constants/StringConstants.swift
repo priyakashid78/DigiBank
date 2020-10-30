@@ -130,20 +130,23 @@ struct Constants {
     }
     
     struct ManagePayee {
-           
-           //Validation string
-           static let payeeNameValidationString = "Enter Account Holder Name"
-           static let nickNameValidationString = "Enter Payee Nickname"
-           static let accValidationString = "Enter 16 digit Account number"
-           
-           //Array Data
-            static let stateArray = ["Maharashtra"]
-            static let cityArray = ["Pune","Mumbai"]
-            static let branch1Array = ["Koregaon Park","Vishrantwadi","Camp Pune","Tilak Road","Shivajinagar","Baner","Karadi","B T Kawade Road","S P Pune", "Katraj"]
-           static let branch2Array = ["Navi Mumbai","Dadar"]
-           
-           
-       }
+        
+        //Validation string
+        static let payeeNameValidationString = "Enter Account Holder Name"
+        static let nickNameValidationString = "Enter Payee Nickname"
+        static let accValidationString = "Enter 16 digit Account number"
+        
+        //Array Data
+        static let stateArray = ["Maharashtra"]
+        static let cityArray = ["Pune","Mumbai"]
+        static let branch1Array = ["Koregaon Park","Vishrantwadi","Camp Pune","Tilak Road","Shivajinagar","Baner","Karadi","B T Kawade Road","S P Pune", "Katraj"]
+        static let branch2Array = ["Navi Mumbai","Dadar"]
+        
+        static let puneIFSC = "XXX000642"
+        static let mumbaiIFSC = "XXX0001966"
+        
+        
+    }
     
     struct storyBoardName {
         static let main  = "Main"
@@ -213,7 +216,7 @@ struct Constants {
         static let fifthType = "Other bank account using NEFT/RTGS"
         static let sixthType = "Other bank account using NEFT/RTGS "
     }
-       
+    
     struct FundTransferPayeeNM {
         static let firstNM = "FDFSA"
         static let secondNM = "VWSDFSDF"

@@ -25,6 +25,7 @@ class ManagePayeeViewController: UIViewController, PayeeViewControllerDelegate, 
     @IBOutlet weak var cityButton: UIButton!
     @IBOutlet weak var branchButton: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var flag:Int?
     
@@ -39,18 +40,39 @@ class ManagePayeeViewController: UIViewController, PayeeViewControllerDelegate, 
         
         stateArray = Constants.ManagePayee.stateArray
         cityArray = Constants.ManagePayee.cityArray
+        branchArray = Constants.ManagePayee.branch1Array
         
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        singleTap.cancelsTouchesInView = false
+        singleTap.numberOfTapsRequired = 1
+        scrollView.addGestureRecognizer(singleTap)
         
         //For left Drawer
         viewModel.delegate = self
+                self.setView()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.navigationBar.barTintColor = hexStringToUIColor(hex: AppColor.accountOveriewSreenCode)
+        //For left Drawer
         self.setNavigationBarItem()
         self.setRightBar()
-        self.setView()
+
+        
+    }
+    @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
+        pickerView.isHidden = true
     }
     
-    
     func moveToNext() {
-        
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "confirm3VC") as! ConfirmPayeeViewController
+        vc.payeeNameString = self.payeeNameTextField.text
+        vc.nickNameString = self.nickNameTextField.text
+        vc.ifscString = self.IFSCTextField.text
+        vc.paymentAccString = self.accNumberTextField.text
+        vc.branchString =  self.branchButton.titleLabel?.text
+        vc.mobileString = self.mobileNoTextField.text
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func showAlert(title: String, errorMessage: String, imageName: String) {
@@ -64,6 +86,10 @@ class ManagePayeeViewController: UIViewController, PayeeViewControllerDelegate, 
     
     func setView() {
         
+        IFSCTextField.text = Constants.ManagePayee.puneIFSC
+        stateButton.setTitle(stateArray[0], for: .normal)
+        cityButton.setTitle(cityArray[0], for: .normal)
+        branchButton.setTitle(branchArray[0], for: .normal)
         pickerView.isHidden = true
         payeeNameTextField.customTextfield()
         accNumberTextField.customTextfield()
@@ -96,26 +122,39 @@ class ManagePayeeViewController: UIViewController, PayeeViewControllerDelegate, 
         
     }
     
-
+    
     @IBAction func stateButtonAction() {
+        self.view.endEditing(true)
         flag = 1
         pickerView.reloadAllComponents()
         pickerView.isHidden = false
     }
     
     @IBAction func cityButtonAction() {
+    
+        self.view.endEditing(true)
         flag = 2
+        if cityButton.titleLabel?.text == Constants.ManagePayee.cityArray[0] {
+            branchButton.setTitle(Constants.ManagePayee.branch1Array[0], for: .normal)
+             IFSCTextField.text = Constants.ManagePayee.puneIFSC
+        } else {
+            branchButton.setTitle(Constants.ManagePayee.branch2Array[0], for: .normal)
+             IFSCTextField.text = Constants.ManagePayee.mumbaiIFSC
+        }
         pickerView.reloadAllComponents()
         pickerView.isHidden = false
         
     }
     
     @IBAction func branchButtonAction() {
+        self.view.endEditing(true)
         flag = 3
-        if cityButton.titleLabel?.text == "Pune" {
+        if cityButton.titleLabel?.text == Constants.ManagePayee.cityArray[0]  {
             branchArray = Constants.ManagePayee.branch1Array
+             IFSCTextField.text = Constants.ManagePayee.puneIFSC
         } else {
-             branchArray = Constants.ManagePayee.branch2Array
+            branchArray = Constants.ManagePayee.branch2Array
+             IFSCTextField.text = Constants.ManagePayee.mumbaiIFSC
         }
         pickerView.reloadAllComponents()
         pickerView.isHidden = false
@@ -154,31 +193,40 @@ class ManagePayeeViewController: UIViewController, PayeeViewControllerDelegate, 
         if flag == 1 {
             stateButton.setTitle(stateArray[row], for: .normal)
         } else if flag == 2 {
+            
             cityButton.setTitle(cityArray[row], for: .normal)
+            
+            if cityButton.titleLabel?.text == Constants.ManagePayee.cityArray[0] {
+                IFSCTextField.text = Constants.ManagePayee.puneIFSC
+                branchButton.setTitle(Constants.ManagePayee.branch1Array[0], for: .normal)
+            } else {
+                IFSCTextField.text = Constants.ManagePayee.mumbaiIFSC
+                branchButton.setTitle(Constants.ManagePayee.branch2Array[0], for: .normal)
+            }
         } else {
             branchButton.setTitle(branchArray[row], for: .normal)
         }
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range:NSRange, replacementString string: String) -> Bool
-       {
-           if textField == payeeNameTextField  {
-               
-               let regex = try! NSRegularExpression(pattern: "[a-zA-Z\\s]+", options: [])
-               let range = regex.rangeOfFirstMatch(in: string, options: [], range: NSRange(location: 0, length: string.count))
-               return range.length == string.count
-           }
-           
-           if textField == mobileNoTextField {
-               let charsLimit = 10
-               
-               let startingLength = textField.text?.count ?? 0
-               let lengthToAdd = string.count
-               let lengthToReplace =  range.length
-               let newLength = startingLength + lengthToAdd - lengthToReplace
-               
-               return newLength <= charsLimit
-           }
+    {
+        if textField == payeeNameTextField  {
+            
+            let regex = try! NSRegularExpression(pattern: "[a-zA-Z\\s]+", options: [])
+            let range = regex.rangeOfFirstMatch(in: string, options: [], range: NSRange(location: 0, length: string.count))
+            return range.length == string.count
+        }
+        
+        if textField == mobileNoTextField {
+            let charsLimit = 10
+            
+            let startingLength = textField.text?.count ?? 0
+            let lengthToAdd = string.count
+            let lengthToReplace =  range.length
+            let newLength = startingLength + lengthToAdd - lengthToReplace
+            
+            return newLength <= charsLimit
+        }
         
         if textField == accNumberTextField {
             let charsLimit = 16
@@ -192,5 +240,6 @@ class ManagePayeeViewController: UIViewController, PayeeViewControllerDelegate, 
         }
         return true
     }
+    
     
 }

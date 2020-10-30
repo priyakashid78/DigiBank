@@ -64,10 +64,10 @@ class SelectLanguageViewController: UIViewController,UITableViewDataSource, UITa
         
         if indexPath.row == 0 {
             L102Language.setAppleLAnguageTo(lang:"en")
-            print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
+            
         }else if indexPath.row == 1 {
             L102Language.setAppleLAnguageTo(lang:"hi")
-            print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
+           
         }else if indexPath.row == 2 {
             L102Language.setAppleLAnguageTo(lang:"mr")
             print("HELLO_WORLD",NSLocalizedString("HELLO_WORLD", comment: ""))
