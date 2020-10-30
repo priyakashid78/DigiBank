@@ -37,7 +37,26 @@ class EReceiptViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+   override func viewWillAppear(_ animated: Bool) {
+        //For left Drawer
+        self.setNavigationBarItem()
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     @IBAction func submitAction() {
-        self.navigationController?.popToRootViewController(animated: true)
+        //self.navigationController?.popToRootViewController(animated: true)
+        let dashboardStoryboard = UIStoryboard(name: Constants.storyBoardName.dashboard, bundle: nil)
+        let vc = dashboardStoryboard.instantiateViewController(withIdentifier: "FundTransferViewController") as! FundTransferViewController
+        if let nav = self.navigationController {
+            for controller in nav.viewControllers as Array {
+                if controller is FundTransferViewController {
+                    let _ = nav.popToViewController(controller as UIViewController, animated: false)
+                    break
+                }
+            }
+            nav.pushViewController(vc, animated: false)
+            return
+        }
+        
     }
 }

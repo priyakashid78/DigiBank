@@ -33,6 +33,12 @@ class GridViewController: UIViewController,GridControllerDelegate {
         self.setUI()
     }
     
+   override func viewWillAppear(_ animated: Bool) {
+        //For left Drawer
+        self.setNavigationBarItem()
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     func setUI() {
         gTextField.customTextfield()
         cTextField.customTextfield()

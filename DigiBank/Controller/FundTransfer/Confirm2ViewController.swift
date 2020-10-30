@@ -39,6 +39,14 @@ class Confirm2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //For left Drawer
+        self.setNavigationBarItem()
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+       
+    
     @IBAction func backAction() {
         self.navigationController?.popViewController(animated: true)
     }

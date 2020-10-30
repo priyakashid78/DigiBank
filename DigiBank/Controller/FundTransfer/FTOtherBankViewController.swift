@@ -51,7 +51,9 @@ class FTOtherBankViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
+        //For left Drawer
+        self.setNavigationBarItem()
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func setView() {
