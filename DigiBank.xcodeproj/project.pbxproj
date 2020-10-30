@@ -66,6 +66,12 @@
 		EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFDB182540157B000EA212 /* UIColorExtension.swift */; };
 		EEB4EE952549834500BA64F7 /* FundTransferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4EE942549834500BA64F7 /* FundTransferCell.swift */; };
 		EEBC3BCB2546CB7300EDB165 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */; };
+		EEDD8650254AF1E900EEA657 /* FTtoBank1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD864F254AF1E900EEA657 /* FTtoBank1ViewController.swift */; };
+		EEDD8652254AF23000EEA657 /* FTSameModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD8651254AF23000EEA657 /* FTSameModelView.swift */; };
+		EEDD8654254AF85D00EEA657 /* Confirm1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD8653254AF85D00EEA657 /* Confirm1ViewController.swift */; };
+		EEDD8658254AFBB200EEA657 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD8657254AFBB200EEA657 /* OTPView.swift */; };
+		EEDD865A254AFC5800EEA657 /* OTPScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD8659254AFC5800EEA657 /* OTPScreenViewController.swift */; };
+		EEDD865C254B051C00EEA657 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD865B254B051C00EEA657 /* OTPViewModel.swift */; };
 		EEE86847253EFDD400564378 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86835253EFDD300564378 /* Poppins-Bold.ttf */; };
 		EEE86848253EFDD400564378 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86836253EFDD300564378 /* Poppins-ExtraBoldItalic.ttf */; };
 		EEE86849253EFDD400564378 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE86837253EFDD300564378 /* Poppins-ExtraLightItalic.ttf */; };
@@ -168,6 +174,12 @@
 		EEAFDB182540157B000EA212 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		EEB4EE942549834500BA64F7 /* FundTransferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FundTransferCell.swift; path = DigiBank/ViewModel/FundTransferCell.swift; sourceTree = SOURCE_ROOT; };
 		EEBC3BCA2546CB7300EDB165 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguageTableViewCell.swift; path = DigiBank/Controller/LanguageTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		EEDD864F254AF1E900EEA657 /* FTtoBank1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTtoBank1ViewController.swift; sourceTree = "<group>"; };
+		EEDD8651254AF23000EEA657 /* FTSameModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSameModelView.swift; sourceTree = "<group>"; };
+		EEDD8653254AF85D00EEA657 /* Confirm1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirm1ViewController.swift; sourceTree = "<group>"; };
+		EEDD8657254AFBB200EEA657 /* OTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		EEDD8659254AFC5800EEA657 /* OTPScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenViewController.swift; sourceTree = "<group>"; };
+		EEDD865B254B051C00EEA657 /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
 		EEE86835253EFDD300564378 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		EEE86836253EFDD300564378 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		EEE86837253EFDD300564378 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -254,6 +266,8 @@
 				EEA096DC25431CDE0024394C /* ContactViewModel.swift */,
 				EE548DC025482ADA00CBCE69 /* ForgotPassViewModel.swift */,
 				EE80AC522549C27B00EB210F /* FTOtherModelView.swift */,
+				EEDD8651254AF23000EEA657 /* FTSameModelView.swift */,
+				EEDD865B254B051C00EEA657 /* OTPViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -330,6 +344,7 @@
 		C004D6A52538404B00C9B65B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EEDD8657254AFBB200EEA657 /* OTPView.swift */,
 				C01F79F72546DB3800288348 /* UIColorFromRGB.swift */,
 				EE548DBA2547F6F100CBCE69 /* GlobalFunctions.swift */,
 				EEA096CC2542C6370024394C /* DigiBank-Bridging-Header.h */,
@@ -440,8 +455,11 @@
 				C06684CD2548671C0035426B /* FundTransferViewController.swift */,
 				EE80AC4A254994DB00EB210F /* FTOtherBankViewController.swift */,
 				EE80AC4E2549B04400EB210F /* Confirm2ViewController.swift */,
+				EEDD8653254AF85D00EEA657 /* Confirm1ViewController.swift */,
 				EEE9070A254AB242001E2C13 /* GridViewController.swift */,
 				EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */,
+				EEDD864F254AF1E900EEA657 /* FTtoBank1ViewController.swift */,
+				EEDD8659254AFC5800EEA657 /* OTPScreenViewController.swift */,
 			);
 			path = FundTransfer;
 			sourceTree = "<group>";
@@ -550,19 +568,23 @@
 				C03F50092541763900C9E032 /* L102Language.swift in Sources */,
 				C06684D0254867630035426B /* ManagePayeeViewController.swift in Sources */,
 				C01F79DA2542A74200288348 /* NetBankingDashboardViewController.swift in Sources */,
+				EEDD8654254AF85D00EEA657 /* Confirm1ViewController.swift in Sources */,
 				EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */,
 				EEA096D72542C6380024394C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				C01F79F22546C9D200288348 /* LeftViewControllerCell.swift in Sources */,
 				EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */,
+				EEDD8652254AF23000EEA657 /* FTSameModelView.swift in Sources */,
 				C01F79DC2542F79200288348 /* LoginToInterNetBankingViewController.swift in Sources */,
 				C01F79E72546C9A100288348 /* UIApplication.swift in Sources */,
 				C0FAA5DD254A7D5100D0B00C /* MyTransactionTableViewCell.swift in Sources */,
 				C01F79E62546C9A100288348 /* UIViewController.swift in Sources */,
 				EE548DC125482ADA00CBCE69 /* ForgotPassViewModel.swift in Sources */,
+				EEDD8650254AF1E900EEA657 /* FTtoBank1ViewController.swift in Sources */,
 				EEA096DF254327430024394C /* SelectLanguageViewController.swift in Sources */,
 				EEE90711254ABC10001E2C13 /* EReceiptViewController.swift in Sources */,
 				EEB4EE952549834500BA64F7 /* FundTransferCell.swift in Sources */,
 				C03F50082541763900C9E032 /* L012Localizer.swift in Sources */,
+				EEDD865C254B051C00EEA657 /* OTPViewModel.swift in Sources */,
 				C06684CE2548671C0035426B /* FundTransferViewController.swift in Sources */,
 				EEA096DB2542DF170024394C /* SignUpViewModel.swift in Sources */,
 				EE10DD7F2541C23100E5AE63 /* SignInViewModel.swift in Sources */,
@@ -571,6 +593,7 @@
 				EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */,
 				EEE9070D254AB5D8001E2C13 /* GridViewModel.swift in Sources */,
 				EE548DBB2547F6F100CBCE69 /* GlobalFunctions.swift in Sources */,
+				EEDD865A254AFC5800EEA657 /* OTPScreenViewController.swift in Sources */,
 				C004D6A22538402600C9B65B /* URLConstants.swift in Sources */,
 				C004D6AF2538453500C9B65B /* Order.swift in Sources */,
 				C01F79F42546C9D200288348 /* SlideMenuController.swift in Sources */,
@@ -591,6 +614,7 @@
 				EEAFDB15254005C0000EA212 /* UITextFieldExtensions.swift in Sources */,
 				EE80AC4F2549B04400EB210F /* Confirm2ViewController.swift in Sources */,
 				C004D67C253821BC00C9B65B /* SceneDelegate.swift in Sources */,
+				EEDD8658254AFBB200EEA657 /* OTPView.swift in Sources */,
 				EEA096D82542C6380024394C /* TPKeyboardAvoidingTableView.m in Sources */,
 				C004D6A12538402600C9B65B /* ColorConstants.swift in Sources */,
 				C004D6AD2538450500C9B65B /* OrderViewModel.swift in Sources */,
