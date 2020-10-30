@@ -93,6 +93,7 @@
 		EEE9070B254AB242001E2C13 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9070A254AB242001E2C13 /* GridViewController.swift */; };
 		EEE9070D254AB5D8001E2C13 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */; };
 		EEE90711254ABC10001E2C13 /* EReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */; };
+		EEEAEDEC254C2FC00062E2F0 /* payeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEAEDEB254C2FC00062E2F0 /* payeeViewModel.swift */; };
 		EEFAAE322540484A00CB1CFB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE312540484A00CB1CFB /* ContactViewController.swift */; };
 		EEFAAE3425404FF800CB1CFB /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */; };
 		EEFAAE3625406C7100CB1CFB /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAAE3525406C7100CB1CFB /* ShadowView.swift */; };
@@ -201,6 +202,7 @@
 		EEE9070A254AB242001E2C13 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		EEE90710254ABC10001E2C13 /* EReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EReceiptViewController.swift; sourceTree = "<group>"; };
+		EEEAEDEB254C2FC00062E2F0 /* payeeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = payeeViewModel.swift; sourceTree = "<group>"; };
 		EEFAAE312540484A00CB1CFB /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		EEFAAE3325404FF800CB1CFB /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		EEFAAE3525406C7100CB1CFB /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				EEE9070C254AB5D8001E2C13 /* GridViewModel.swift */,
 				C004D6AC2538450500C9B65B /* OrderViewModel.swift */,
 				EE10DD7E2541C23100E5AE63 /* SignInViewModel.swift */,
+				EEEAEDEB254C2FC00062E2F0 /* payeeViewModel.swift */,
 				EEA096DA2542DF170024394C /* SignUpViewModel.swift */,
 				EEA096DC25431CDE0024394C /* ContactViewModel.swift */,
 				EE548DC025482ADA00CBCE69 /* ForgotPassViewModel.swift */,
@@ -558,6 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEAEDEC254C2FC00062E2F0 /* payeeViewModel.swift in Sources */,
 				EE80AC532549C27B00EB210F /* FTOtherModelView.swift in Sources */,
 				C01F79F82546DB3800288348 /* UIColorFromRGB.swift in Sources */,
 				EE548DBD2547FDCA00CBCE69 /* GradientButton.swift in Sources */,

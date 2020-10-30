@@ -126,9 +126,23 @@ struct Constants {
         static let oGridString = "33"
         static let cGridString = "31"
         static let gGridString = "79"
-        
-        
     }
+    
+    struct ManagePayee {
+           
+           //Validation string
+           static let payeeNameValidationString = "Enter Account Holder Name"
+           static let nickNameValidationString = "Enter Payee Nickname"
+           static let accValidationString = "Enter 16 digit Account number"
+           
+           //Array Data
+            static let stateArray = ["Maharashtra"]
+            static let cityArray = ["Pune","Mumbai"]
+            static let branch1Array = ["Koregaon Park","Vishrantwadi","Camp Pune","Tilak Road","Shivajinagar","Baner","Karadi","B T Kawade Road","S P Pune", "Katraj"]
+           static let branch2Array = ["Navi Mumbai","Dadar"]
+           
+           
+       }
     
     struct storyBoardName {
         static let main  = "Main"
