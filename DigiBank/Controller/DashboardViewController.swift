@@ -66,9 +66,10 @@ class DashboardViewController: UIViewController {
     @IBAction func logoutAction(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: Constants.storeString.appLoginFlag)
         UserDefaults.standard.removeObject(forKey: Constants.storeString.userName)
+        UserDefaults.standard.removeObject(forKey: Constants.storeString.payeeArray)
         self.viewDidLoad()
         self.viewWillAppear(true)
-      
+        
     }
     @IBAction func profileAction(_ sender: Any) {
     }
@@ -80,8 +81,8 @@ class DashboardViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
-//        vc.modalPresentationStyle = .overFullScreen
-//        self.present(vc, animated: true, completion: nil)
+        //        vc.modalPresentationStyle = .overFullScreen
+        //        self.present(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func netBankingAction(_ sender: Any) {
@@ -89,8 +90,8 @@ class DashboardViewController: UIViewController {
         guard optionalBool == true else {
             //Move to login
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
-//            vc.modalPresentationStyle = .overFullScreen
-//            self.present(vc, animated: true, completion: nil)
+            //            vc.modalPresentationStyle = .overFullScreen
+            //            self.present(vc, animated: true, completion: nil)
             self.navigationController?.pushViewController(vc, animated: true)
             return
         }
@@ -98,18 +99,18 @@ class DashboardViewController: UIViewController {
         //Move to Netbanking demo
         let dashboard : UIStoryboard = UIStoryboard(name: Constants.storyBoardName.dashboard, bundle:nil)
         let vc = dashboard.instantiateViewController(withIdentifier: Constants.viewControllerNames.netBankingDashboardViewController) as! NetBankingDashboardViewController
-//        vc.modalPresentationStyle = .overFullScreen
-//        self.present(vc, animated: true, completion: nil)
+        //        vc.modalPresentationStyle = .overFullScreen
+        //        self.present(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func mobileBanking(_ sender: Any) {
         
     }
     @IBAction func walletBankingAction(_ sender: Any) {
-       
+        
     }
     @IBAction func microPayAction(_ sender: Any) {
-    
+        
     }
     
     @IBAction func btnGetInTouch(_ sender: Any) {

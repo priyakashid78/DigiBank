@@ -49,7 +49,7 @@ class ManagePayeeViewController: UIViewController, PayeeViewControllerDelegate, 
         
         //For left Drawer
         viewModel.delegate = self
-                self.setView()
+        self.setView()
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(false, animated: false)

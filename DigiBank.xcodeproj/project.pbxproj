@@ -44,6 +44,8 @@
 		EE10DD812541C2A000E5AE63 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */; };
 		EE10DD832541C2AC00E5AE63 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD822541C2AC00E5AE63 /* StringExtension.swift */; };
 		EE10DD852541CC9800E5AE63 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */; };
+		EE2CF558254FD32A0024C922 /* URNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CF557254FD32A0024C922 /* URNViewController.swift */; };
+		EE2CF55A254FD4FD0024C922 /* URNViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CF559254FD4FD0024C922 /* URNViewModel.swift */; };
 		EE548DBB2547F6F100CBCE69 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE548DBA2547F6F100CBCE69 /* GlobalFunctions.swift */; };
 		EE548DBD2547FDCA00CBCE69 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE548DBC2547FDCA00CBCE69 /* GradientButton.swift */; };
 		EE548DBF2548240D00CBCE69 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE548DBE2548240D00CBCE69 /* ForgotPasswordViewController.swift */; };
@@ -149,6 +151,8 @@
 		EE10DD802541C2A000E5AE63 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		EE10DD822541C2AC00E5AE63 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EE10DD842541CC9800E5AE63 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		EE2CF557254FD32A0024C922 /* URNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URNViewController.swift; sourceTree = "<group>"; };
+		EE2CF559254FD4FD0024C922 /* URNViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URNViewModel.swift; sourceTree = "<group>"; };
 		EE548DBA2547F6F100CBCE69 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = DigiBank/Constants/GlobalFunctions.swift; sourceTree = SOURCE_ROOT; };
 		EE548DBC2547FDCA00CBCE69 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		EE548DBE2548240D00CBCE69 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -273,6 +277,7 @@
 				EE80AC522549C27B00EB210F /* FTOtherModelView.swift */,
 				EEDD8651254AF23000EEA657 /* FTSameModelView.swift */,
 				EEDD865B254B051C00EEA657 /* OTPViewModel.swift */,
+				EE2CF559254FD4FD0024C922 /* URNViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				C06684CF254867630035426B /* ManagePayeeViewController.swift */,
 				C06684D12548679C0035426B /* EStatementViewController.swift */,
 				EE80AC502549B86400EB210F /* AlertScreenViewController.swift */,
+				EE2CF557254FD32A0024C922 /* URNViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -572,6 +578,7 @@
 				C01F79F62546CB8300288348 /* AccountOverViewViewController.swift in Sources */,
 				EEAFDB1725400785000EA212 /* SignInViewController.swift in Sources */,
 				EE80AC4D25499F5500EB210F /* DateExtension.swift in Sources */,
+				EE2CF55A254FD4FD0024C922 /* URNViewModel.swift in Sources */,
 				C03F50092541763900C9E032 /* L102Language.swift in Sources */,
 				C06684D0254867630035426B /* ManagePayeeViewController.swift in Sources */,
 				C01F79DA2542A74200288348 /* NetBankingDashboardViewController.swift in Sources */,
@@ -625,6 +632,7 @@
 				EEDD8658254AFBB200EEA657 /* OTPView.swift in Sources */,
 				EEA096D82542C6380024394C /* TPKeyboardAvoidingTableView.m in Sources */,
 				C004D6A12538402600C9B65B /* ColorConstants.swift in Sources */,
+				EE2CF558254FD32A0024C922 /* URNViewController.swift in Sources */,
 				C004D6AD2538450500C9B65B /* OrderViewModel.swift in Sources */,
 				EE548DBF2548240D00CBCE69 /* ForgotPasswordViewController.swift in Sources */,
 				EEAFDB192540157B000EA212 /* UIColorExtension.swift in Sources */,

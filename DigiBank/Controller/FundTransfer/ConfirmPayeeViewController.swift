@@ -49,13 +49,9 @@ class ConfirmPayeeViewController: UIViewController {
     
     @IBAction func ConfirmAction() {
         
-//        let vc = self.storyboard!.instantiateViewController(withIdentifier: "otpVc") as! confirm3VC
-//        vc.fromAccountString = self.fromAccountString
-//        vc.toAccountString = self.toAccountString
-//        vc.paymentModeString = self.paymentModeString
-//        vc.remarkString = self.remarkString
-//        vc.amountString =  self.amountString
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "URNVc") as! URNViewController
+        vc.accNumber = self.paymentAccString
+        self.navigationController?.pushViewController(vc, animated: true)
         
         
     }

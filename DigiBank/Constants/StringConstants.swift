@@ -50,6 +50,7 @@ struct Constants {
     struct storeString {
         static let appLoginFlag = "appLoginFlag"
         static let userName = "userName"
+        static let payeeArray = "payeeArray"
         
     }
     

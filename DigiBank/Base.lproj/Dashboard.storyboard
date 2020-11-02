@@ -1063,7 +1063,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcw-LM-nPF">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
+                                        <rect key="frame" x="0.0" y="10" width="320" height="812"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fund Transfer to other Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv0-nY-Dwy">
                                                 <rect key="frame" x="20" y="20" width="252.5" height="25.5"/>
@@ -1147,21 +1147,6 @@
                                                 <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-1r-dRk">
-                                                <rect key="frame" x="20" y="275.5" width="280" height="48"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="mQP-rI-If7"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
-                                                <inset key="imageEdgeInsets" minX="316" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Select One">
-                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="toAccAction" destination="Ncc-Qq-Q5Q" eventType="touchUpInside" id="R9H-DP-1bo"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ips-mH-eRn">
                                                 <rect key="frame" x="20" y="411.5" width="280" height="48"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1177,13 +1162,6 @@
                                                     <action selector="paymentAction" destination="Ncc-Qq-Q5Q" eventType="touchUpInside" id="W2O-jH-qUJ"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 80" translatesAutoresizingMaskIntoConstraints="NO" id="p7G-et-NJK">
-                                                <rect key="frame" x="271" y="294.5" width="10" height="10"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="10" id="Hxd-co-Dy6"/>
-                                                    <constraint firstAttribute="width" constant="10" id="olS-An-xnY"/>
-                                                </constraints>
-                                            </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 80" translatesAutoresizingMaskIntoConstraints="NO" id="73E-HA-cJ0">
                                                 <rect key="frame" x="271" y="430.5" width="10" height="10"/>
                                                 <constraints>
@@ -1249,13 +1227,26 @@
                                                     <action selector="nextButton" destination="Ncc-Qq-Q5Q" eventType="touchUpInside" id="zhS-8r-LJX"/>
                                                 </connections>
                                             </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="16 digit account number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5O1-k3-mnW">
+                                                <rect key="frame" x="25" y="275.5" width="270" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="PEp-S2-yCC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Ncc-Qq-Q5Q" id="nJS-Lz-NMb"/>
+                                                </connections>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="Hwy-3d-nIi" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="1JY-Bj-4qe"/>
                                             <constraint firstItem="Hwy-3d-nIi" firstAttribute="top" secondItem="7hl-iJ-Gqt" secondAttribute="bottom" constant="15" id="1iJ-oy-RDi"/>
+                                            <constraint firstItem="5O1-k3-mnW" firstAttribute="top" secondItem="B2h-n2-Ld5" secondAttribute="bottom" constant="15" id="2hd-kI-bUu"/>
                                             <constraint firstItem="qeM-TS-2Xw" firstAttribute="top" secondItem="7hl-iJ-Gqt" secondAttribute="bottom" constant="15" id="3CY-o4-0Cm"/>
                                             <constraint firstItem="Xgx-Uv-hVv" firstAttribute="leading" secondItem="Hwy-3d-nIi" secondAttribute="trailing" constant="8" id="3EV-kt-0vh"/>
+                                            <constraint firstItem="cXm-I0-Ogg" firstAttribute="top" secondItem="5O1-k3-mnW" secondAttribute="bottom" constant="20" id="3h8-nl-NKV"/>
                                             <constraint firstItem="B2h-n2-Ld5" firstAttribute="top" secondItem="qEU-Yy-7Ba" secondAttribute="bottom" constant="20" id="45B-Ra-342"/>
                                             <constraint firstItem="ips-mH-eRn" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="6C2-0x-z93"/>
                                             <constraint firstItem="B2h-n2-Ld5" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="7iv-Pr-i6C"/>
@@ -1265,6 +1256,7 @@
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aiK-qi-gcD" secondAttribute="trailing" constant="20" symbolic="YES" id="95J-qE-Nr3"/>
                                             <constraint firstItem="7hl-iJ-Gqt" firstAttribute="top" secondItem="dv0-nY-Dwy" secondAttribute="bottom" constant="30" id="9Lg-if-6Ev"/>
                                             <constraint firstItem="Xgx-Uv-hVv" firstAttribute="centerY" secondItem="Hwy-3d-nIi" secondAttribute="centerY" id="9Uc-Z4-foP"/>
+                                            <constraint firstItem="5O1-k3-mnW" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="25" id="9Xe-Za-5td"/>
                                             <constraint firstItem="CnN-Ri-MM5" firstAttribute="leading" secondItem="0jm-8h-0dx" secondAttribute="trailing" constant="8" id="9et-y6-qT1"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="B2h-n2-Ld5" secondAttribute="trailing" constant="20" symbolic="YES" id="BP6-vP-6nX"/>
                                             <constraint firstItem="aiK-qi-gcD" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="BYR-zu-BAh"/>
@@ -1272,16 +1264,12 @@
                                             <constraint firstItem="qEU-Yy-7Ba" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="Etl-Vq-03F"/>
                                             <constraint firstItem="3Ml-Bt-VPO" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="F3s-Ya-v0q"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CnN-Ri-MM5" secondAttribute="trailing" constant="20" symbolic="YES" id="G6q-wq-qKo"/>
-                                            <constraint firstItem="nbb-1r-dRk" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="JnI-Jl-5CC"/>
                                             <constraint firstItem="dv0-nY-Dwy" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="Kp6-b4-SaE"/>
                                             <constraint firstItem="73E-HA-cJ0" firstAttribute="centerY" secondItem="ips-mH-eRn" secondAttribute="centerY" id="Lmi-VV-ODa"/>
                                             <constraint firstItem="ecN-VW-HML" firstAttribute="centerY" secondItem="qEU-Yy-7Ba" secondAttribute="centerY" id="LqU-WE-rX8"/>
-                                            <constraint firstItem="p7G-et-NJK" firstAttribute="trailing" secondItem="nbb-1r-dRk" secondAttribute="trailing" constant="-19" id="MKv-0K-Zm2"/>
                                             <constraint firstAttribute="trailing" secondItem="ips-mH-eRn" secondAttribute="trailing" constant="20" id="MzU-nu-fJs"/>
-                                            <constraint firstAttribute="trailing" secondItem="nbb-1r-dRk" secondAttribute="trailing" constant="20" id="Nmj-C0-3Wf"/>
                                             <constraint firstItem="4YV-JD-cKV" firstAttribute="trailing" secondItem="3Zh-je-6CH" secondAttribute="trailing" id="Pqu-3B-ZG5"/>
-                                            <constraint firstItem="nbb-1r-dRk" firstAttribute="top" secondItem="B2h-n2-Ld5" secondAttribute="bottom" constant="15" id="Rez-IE-x66"/>
-                                            <constraint firstItem="cXm-I0-Ogg" firstAttribute="top" secondItem="nbb-1r-dRk" secondAttribute="bottom" constant="20" id="Y0P-cI-3Kg"/>
+                                            <constraint firstAttribute="trailing" secondItem="5O1-k3-mnW" secondAttribute="trailing" constant="25" id="dho-Pw-saK"/>
                                             <constraint firstItem="3Ml-Bt-VPO" firstAttribute="top" secondItem="3Zh-je-6CH" secondAttribute="bottom" constant="20" id="dqV-L3-eF5"/>
                                             <constraint firstAttribute="trailing" secondItem="qEU-Yy-7Ba" secondAttribute="trailing" constant="20" id="eFA-n5-kAm"/>
                                             <constraint firstItem="0jm-8h-0dx" firstAttribute="leading" secondItem="5dQ-Fp-ndf" secondAttribute="trailing" constant="20" id="fy3-b3-yoU"/>
@@ -1305,7 +1293,6 @@
                                             <constraint firstAttribute="trailing" secondItem="3Ml-Bt-VPO" secondAttribute="trailing" constant="20" id="yRD-1M-ItS"/>
                                             <constraint firstItem="7hl-iJ-Gqt" firstAttribute="leading" secondItem="zcw-LM-nPF" secondAttribute="leading" constant="20" id="ygT-72-hEv"/>
                                             <constraint firstItem="iMC-tm-D2d" firstAttribute="top" secondItem="3Ml-Bt-VPO" secondAttribute="bottom" constant="39.5" id="ytU-WC-hvU"/>
-                                            <constraint firstItem="p7G-et-NJK" firstAttribute="centerY" secondItem="nbb-1r-dRk" secondAttribute="centerY" id="z3A-hP-nt3"/>
                                         </constraints>
                                     </view>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9G7-4a-p0x">
@@ -1321,7 +1308,7 @@
                                     </pickerView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="zcw-LM-nPF" firstAttribute="top" secondItem="dZ6-dL-Jdz" secondAttribute="top" id="0O9-iX-n4h"/>
+                                    <constraint firstItem="zcw-LM-nPF" firstAttribute="top" secondItem="dZ6-dL-Jdz" secondAttribute="top" constant="10" id="0O9-iX-n4h"/>
                                     <constraint firstItem="9G7-4a-p0x" firstAttribute="leading" secondItem="JUY-Sd-Y4R" secondAttribute="leading" id="1M6-T0-EEC"/>
                                     <constraint firstAttribute="trailing" secondItem="zcw-LM-nPF" secondAttribute="trailing" id="7EH-Pf-4Ex"/>
                                     <constraint firstAttribute="bottom" secondItem="zcw-LM-nPF" secondAttribute="bottom" id="ENR-0g-l3Q"/>
@@ -1353,7 +1340,7 @@
                         <outlet property="pickerView" destination="9G7-4a-p0x" id="Lu0-bh-G3Y"/>
                         <outlet property="remarkTextField" destination="3Ml-Bt-VPO" id="ix4-Tr-ZyY"/>
                         <outlet property="rtgsButton" destination="qeM-TS-2Xw" id="RVJ-ga-et9"/>
-                        <outlet property="toAccButton" destination="nbb-1r-dRk" id="b2R-lL-Ktq"/>
+                        <outlet property="toAccButton" destination="5O1-k3-mnW" id="XP4-5X-eTi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Htg-Dh-jxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3825,7 +3812,7 @@
         <!--View Controller-->
         <scene sceneID="QNW-PY-DNO">
             <objects>
-                <viewController id="QLl-I2-5gm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="URNVc" id="QLl-I2-5gm" customClass="URNViewController" customModule="DigiBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J81-vh-MzN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3877,6 +3864,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ConfirmAction" destination="QLl-I2-5gm" eventType="touchUpInside" id="Ljt-Ka-aY0"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter unique reference number(URN) to confirm the beneficiary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I04-cF-PiN">
                                                 <rect key="frame" x="25" y="253.5" width="270" height="34"/>
@@ -3947,7 +3937,8 @@
                         <viewLayoutGuide key="safeArea" id="Tol-qe-YRd"/>
                     </view>
                     <connections>
-                        <outlet property="OTpLabel" destination="Yha-W2-t8c" id="NBb-D2-8RB"/>
+                        <outlet property="OTPTextField1" destination="4P2-Ix-2wt" id="cmA-U2-i0y"/>
+                        <outlet property="OTpLabel" destination="Yha-W2-t8c" id="5a5-Gd-74o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mar-jw-zdd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
